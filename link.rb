@@ -1,8 +1,8 @@
 Plugin.is {
     name "Link"
-    version "0.1alpha"
+    version "0.2"
     author "d4l3k"
-    description "Advanced Sign Based Operations in Minecraft."
+    description "Advanced sign based mechanisms in Minecraft."
     commands :title => {
         :description => "Sets a title for a player.",
         :usage => "/title <player> <title>\n/title <title>",
@@ -27,6 +27,7 @@ import 'org.bukkit.ChatColor'
 import 'org.bukkit.Material'
 import 'org.bukkit.event.block.Action'
 import 'org.bukkit.craftbukkit.block.CraftSign'
+import 'org.bukkit.event.block.SignChangeEvent'
 
 require 'yaml'
 
@@ -86,6 +87,54 @@ class Link < RubyPlugin
 			file.print YAML::dump($gates)
 		end
 		debug "Saved #{$gates.length} gates."
+	end
+	def generate_docs
+		debug "Generating Documents"
+		gates = []
+		world = getServer.getWorld("world")
+		debug "World: #{world.getName}"
+		block = world.getBlockAt(0,0,2)
+		block.setType(Material::SIGN_POST)
+		player = getServer.getPlayer("d4l3k")
+		debug "Player: #{player.getName}"
+		event = SignChangeEvent.new(block, player, ["","","",""])
+		@gate_ref.values.uniq.each do |gatec|
+			debug "Proccessing: #{gatec.to_s}"
+			gate = gatec.new event
+			info = gate.name+"\n"
+			info+= "* In game display: `#{gate.id}`\n"
+			alia = []
+			@gate_ref.each do |k, v|
+				if v == gatec
+					alia.push k
+				end
+			end
+			info+= "* Creation Names: `#{alia.join("`, `")}`\n"
+			input = ""
+			i=1
+			gate.inputs.each do |k,v|
+				input += "#{i}. `#{k}`, Type: `#{v.class.to_s}`, Default: `#{v.to_s}`\n"
+				i+=1
+			end
+			info+= "* Inputs:\n"+input
+			output = ""
+			i=1
+			gate.outputs.each do |k,v|
+				output = "#{i}. `#{k}`, Type: `#{v[0].class.to_s}`, Default: `#{v[0].to_s}`\n"
+				i+=1
+			end
+			info+= "* Outputs:\n"+output
+			info+= "* Permissions: `#{gate.perms}`\n"
+			debug info
+			gates.push info
+		end
+		final = "Case does not matter for gate creation.\n\n---\n"
+		final += gates.sort.join "\n---\n"
+		gate_file = File.join(File.dirname(__FILE__),"./link_documentation.markdown")
+		File.open(gate_file, "w") do |file|
+			file.print final
+		end
+		debug "Documentation wrote: #{gates.length} gates."
 	end
 	def get_gate block
 		b = nil
@@ -276,18 +325,22 @@ class Link < RubyPlugin
 		info "Disabled."
 	end
 	def onCommand sender, cmd, label, args
-		player = sender.getPlayer
-		if @player_status[player]==nil
-			@player_status.store player, [false, 0]
-		end
-		@player_status[player][0]=!@player_status[player][0]
-		if @player_status[player][0]
-			player.sendMessage("[LINK] "+ChatColor::GREEN.toString+"Edit mode enabled.")
+		if args[0] == "generate"
+			generate_docs
 		else
-			@player_status.store player, [false, 0]
-			player.sendMessage("[LINK] "+ChatColor::RED.toString+"Edit mode disabled.")
+			player = sender.getPlayer
+			if @player_status[player]==nil
+				@player_status.store player, [false, 0]
+			end
+			@player_status[player][0]=!@player_status[player][0]
+			if @player_status[player][0]
+				player.sendMessage("[LINK] "+ChatColor::GREEN.toString+"Edit mode enabled.")
+			else
+				@player_status.store player, [false, 0]
+				player.sendMessage("[LINK] "+ChatColor::RED.toString+"Edit mode disabled.")
+			end
+			return true
 		end
-		return true
 	end
 end
 
