@@ -94,14 +94,14 @@ class Link < RubyPlugin
 		world = getServer.getWorld("world")
 		debug "World: #{world.getName}"
 		block = world.getBlockAt(0,0,2)
-		block.setType(Material::SIGN_POST)
+		#block.setType(Material::SIGN_POST)
 		player = getServer.getPlayer("d4l3k")
 		debug "Player: #{player.getName}"
 		event = SignChangeEvent.new(block, player, ["","","",""])
 		@gate_ref.values.uniq.each do |gatec|
 			debug "Proccessing: #{gatec.to_s}"
 			gate = gatec.new event
-			info = gate.name+"\n"
+			info = "# "+gate.name+"\n"
 			info+= "* In game display: `#{gate.id}`\n"
 			alia = []
 			@gate_ref.each do |k, v|
@@ -116,14 +116,14 @@ class Link < RubyPlugin
 				input += "#{i}. `#{k}`, Type: `#{v.class.to_s}`, Default: `#{v.to_s}`\n"
 				i+=1
 			end
-			info+= "* Inputs:\n"+input
+			info+= "* Inputs:\n\n"+input+"\n"
 			output = ""
 			i=1
 			gate.outputs.each do |k,v|
 				output = "#{i}. `#{k}`, Type: `#{v[0].class.to_s}`, Default: `#{v[0].to_s}`\n"
 				i+=1
 			end
-			info+= "* Outputs:\n"+output
+			info+= "* Outputs:\n\n"+output+"\n"
 			info+= "* Permissions: `#{gate.perms}`\n"
 			debug info
 			gates.push info
