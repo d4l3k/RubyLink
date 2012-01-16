@@ -1,11 +1,11 @@
 Case does not matter for gate creation.
 
 # Add Fixnum
-InGame: `[AddFixnum]`
+__Appearance on Sign:__ `[AddFixnum]`
 
-Creation Aliases: `[+]`, `[add]`, `[addfixnum]`
+__Creation Aliases:__ `[+]`, `[add]`, `[addfixnum]`
 
-Inputs:
+__Inputs:__
 
 * `Number1`, Type: `Float`, Default: `0.0`
 
@@ -16,23 +16,23 @@ Inputs:
 * `Number4`, Type: `Float`, Default: `0.0`
 
 
-Outputs:
+__Outputs:__
 
 * `Product`, Type: `Float`, Default: `0.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Add to Position
-Description: Adds float values to a position.
+__Description:__ Adds float values to a position.
 
-InGame: `[AddPos]`
+__Appearance on Sign:__ `[AddPos]`
 
-Creation Aliases: `[addpos]`, `[apos]`
+__Creation Aliases:__ `[addpos]`, `[apos]`
 
-Inputs:
+__Inputs:__
 
 * `X`, Type: `Float`, Default: `0.0`
 
@@ -43,42 +43,42 @@ Inputs:
 * `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
 
 
-Outputs:
+__Outputs:__
 
 * `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # All >= 1.0
-InGame: `[All]`
+__Appearance on Sign:__ `[All]`
 
-Creation Aliases: `[&&]`, `[all]`
+__Creation Aliases:__ `[&&]`, `[all]`
 
-Inputs:
+__Inputs:__
 
 * `Number1`, Type: `Float`, Default: `0.0`
 
 * `Number2`, Type: `Float`, Default: `0.0`
 
 
-Outputs:
+__Outputs:__
 
 * `True`, Type: `Float`, Default: `0.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Any
-InGame: `[Any]`
+__Appearance on Sign:__ `[Any]`
 
-Creation Aliases: `[any]`, `[||]`
+__Creation Aliases:__ `[any]`, `[||]`
 
-Inputs:
+__Inputs:__
 
 * `Number1`, Type: `Float`, Default: `0.0`
 
@@ -89,59 +89,53 @@ Inputs:
 * `Number4`, Type: `Float`, Default: `0.0`
 
 
-Outputs:
+__Outputs:__
 
 * `True`, Type: `Float`, Default: `0.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Button
-Description: Goes to the high value then the low value. Can use sign arguments. Line 2: <high value>[,<low value>]
+__Description:__ Goes to the high value then the low value. Can use sign arguments. Line 2: <high value>[,<low value>]
 
-InGame: `[Button]`
+__Appearance on Sign:__ `[Button]`
 
-Creation Aliases: `[b]`, `[but]`, `[button]`
+__Creation Aliases:__ `[b]`, `[but]`, `[button]`
 
-Inputs:
-
-
-Outputs:
+__Outputs:__
 
 * `Value`, Type: `Float`, Default: `0.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Constant Value
-Description: Outputs a constant that is set on the 2nd line. Can be a float or a string.
+__Description:__ Outputs a constant that is set on the 2nd line. Can be a float or a string.
 
-InGame: `[Constant]`
+__Appearance on Sign:__ `[Constant]`
 
-Creation Aliases: `[c]`, `[constant]`, `[value]`
+__Creation Aliases:__ `[c]`, `[constant]`, `[value]`
 
-Inputs:
-
-
-Outputs:
+__Outputs:__
 
 * `Value`, Type: `Float`, Default: `1.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Divide Fixnum
-InGame: `[Divide]`
+__Appearance on Sign:__ `[Divide]`
 
-Creation Aliases: `[/]`, `[divide]`
+__Creation Aliases:__ `[/]`, `[divide]`
 
-Inputs:
+__Inputs:__
 
 * `Number1`, Type: `Float`, Default: `1.0`
 
@@ -152,145 +146,142 @@ Inputs:
 * `Number4`, Type: `Float`, Default: `1.0`
 
 
-Outputs:
+__Outputs:__
 
 * `Product`, Type: `Float`, Default: `1.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Equal
-InGame: `[==]`
+__Appearance on Sign:__ `[==]`
 
-Creation Aliases: `[==]`, `[equal]`
+__Creation Aliases:__ `[==]`, `[equal]`
 
-Inputs:
+__Inputs:__
 
 * `Number1`, Type: `Float`, Default: `0.0`
 
 * `Number2`, Type: `Float`, Default: `0.0`
 
 
-Outputs:
+__Outputs:__
 
 * `True`, Type: `Float`, Default: `1.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # GPS
-InGame: `[GPS]`
+__Appearance on Sign:__ `[GPS]`
 
-Creation Aliases: `[gps]`, `[location]`
+__Creation Aliases:__ `[gps]`, `[location]`
 
-Inputs:
-
-
-Outputs:
+__Outputs:__
 
 * `Position`, Type: `Position`, Default: `[0.0,0.0,2.0]`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Greater
-InGame: `[>]`
+__Appearance on Sign:__ `[>]`
 
-Creation Aliases: `[>]`, `[greater]`
+__Creation Aliases:__ `[>]`, `[greater]`
 
-Inputs:
+__Inputs:__
 
 * `Number1`, Type: `Float`, Default: `0.0`
 
 * `Number2`, Type: `Float`, Default: `0.0`
 
 
-Outputs:
+__Outputs:__
 
 * `True`, Type: `Float`, Default: `0.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Greater Than or Equals To
-InGame: `[>=]`
+__Appearance on Sign:__ `[>=]`
 
-Creation Aliases: `[>=]`, `[greatequal]`
+__Creation Aliases:__ `[>=]`, `[greatequal]`
 
-Inputs:
+__Inputs:__
 
 * `Number1`, Type: `Float`, Default: `0.0`
 
 * `Number2`, Type: `Float`, Default: `0.0`
 
 
-Outputs:
+__Outputs:__
 
 * `True`, Type: `Float`, Default: `1.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Less
-InGame: `[<]`
+__Appearance on Sign:__ `[<]`
 
-Creation Aliases: `[<]`, `[less]`
+__Creation Aliases:__ `[<]`, `[less]`
 
-Inputs:
+__Inputs:__
 
 * `Number1`, Type: `Float`, Default: `0.0`
 
 * `Number2`, Type: `Float`, Default: `0.0`
 
 
-Outputs:
+__Outputs:__
 
 * `True`, Type: `Float`, Default: `0.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Less Than or Equals To
-InGame: `[<=]`
+__Appearance on Sign:__ `[<=]`
 
-Creation Aliases: `[<=]`, `[lessequal]`
+__Creation Aliases:__ `[<=]`, `[lessequal]`
 
-Inputs:
+__Inputs:__
 
 * `Number1`, Type: `Float`, Default: `0.0`
 
 * `Number2`, Type: `Float`, Default: `0.0`
 
 
-Outputs:
+__Outputs:__
 
 * `True`, Type: `Float`, Default: `1.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Make Position
-Description: Makes a position out of three float values. (X, Y, Z)
+__Description:__ Makes a position out of three float values. (X, Y, Z)
 
-InGame: `[MakePos]`
+__Appearance on Sign:__ `[MakePos]`
 
-Creation Aliases: `[makepos]`, `[mpos]`
+__Creation Aliases:__ `[makepos]`, `[mpos]`
 
-Inputs:
+__Inputs:__
 
 * `X`, Type: `Float`, Default: `0.0`
 
@@ -299,21 +290,21 @@ Inputs:
 * `Z`, Type: `Float`, Default: `0.0`
 
 
-Outputs:
+__Outputs:__
 
 * `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Minus Fixnum
-InGame: `[MinusFixnum]`
+__Appearance on Sign:__ `[MinusFixnum]`
 
-Creation Aliases: `[-]`, `[minus]`, `[minusfixnum]`
+__Creation Aliases:__ `[-]`, `[minus]`, `[minusfixnum]`
 
-Inputs:
+__Inputs:__
 
 * `Number1`, Type: `Float`, Default: `0.0`
 
@@ -324,21 +315,21 @@ Inputs:
 * `Number4`, Type: `Float`, Default: `0.0`
 
 
-Outputs:
+__Outputs:__
 
 * `Product`, Type: `Float`, Default: `0.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Multiply Fixnum
-InGame: `[Multiply]`
+__Appearance on Sign:__ `[Multiply]`
 
-Creation Aliases: `[*]`, `[multiply]`
+__Creation Aliases:__ `[*]`, `[multiply]`
 
-Inputs:
+__Inputs:__
 
 * `Number1`, Type: `Float`, Default: `1.0`
 
@@ -349,162 +340,156 @@ Inputs:
 * `Number4`, Type: `Float`, Default: `1.0`
 
 
-Outputs:
+__Outputs:__
 
 * `Product`, Type: `Float`, Default: `1.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Not Equal
-InGame: `[!=]`
+__Appearance on Sign:__ `[!=]`
 
-Creation Aliases: `[!=]`, `[notequal]`
+__Creation Aliases:__ `[!=]`, `[notequal]`
 
-Inputs:
+__Inputs:__
 
 * `Number1`, Type: `Float`, Default: `0.0`
 
 * `Number2`, Type: `Float`, Default: `0.0`
 
 
-Outputs:
+__Outputs:__
 
 * `True`, Type: `Float`, Default: `1.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Player Position
-InGame: `[PlayerPos]`
+__Appearance on Sign:__ `[PlayerPos]`
 
-Creation Aliases: `[playerpos]`, `[ppos]`
+__Creation Aliases:__ `[playerpos]`, `[ppos]`
 
-Inputs:
+__Inputs:__
 
 * `Player`, Type: `String`, Default: `X: 0.0`
 
 
-Outputs:
+__Outputs:__
 
 * `Position`, Type: `Position`, Default: `[0.0,0.0,2.0]`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Player Sensor
-InGame: `[PlayrSensor]`
+__Appearance on Sign:__ `[PlayrSensor]`
 
-Creation Aliases: `[playersensor]`, `[psensor]`
+__Creation Aliases:__ `[playersensor]`, `[psensor]`
 
-Inputs:
+__Inputs:__
 
 * `Update`, Type: `Float`, Default: `0.0`
 
 * `Radius`, Type: `Float`, Default: `10.0`
 
 
-Outputs:
+__Outputs:__
 
 * `Player`, Type: `String`, Default: ``
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Redstone Power Input
-InGame: `[RedstoneIn]`
+__Appearance on Sign:__ `[RedstoneIn]`
 
-Creation Aliases: `[redstonein]`, `[rin]`
+__Creation Aliases:__ `[redstonein]`, `[rin]`
 
-Inputs:
-
-
-Outputs:
+__Outputs:__
 
 * `Power`, Type: `Float`, Default: `0.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Signal Delay
-Description: Delays a float signal for a specified number of ingame ticks.
+__Description:__ Delays a float signal for a specified number of ingame ticks.
 
-InGame: `[Delay]`
+__Appearance on Sign:__ `[Delay]`
 
-Creation Aliases: `[delay]`
+__Creation Aliases:__ `[delay]`
 
-Inputs:
+__Inputs:__
 
 * `Value`, Type: `Float`, Default: `0.0`
 
 * `Delay`, Type: `Float`, Default: `10.0`
 
 
-Outputs:
+__Outputs:__
 
 * `Value`, Type: `Float`, Default: `0.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Split Position
-InGame: `[SplitPos]`
+__Appearance on Sign:__ `[SplitPos]`
 
-Creation Aliases: `[splitpos]`, `[spos]`
+__Creation Aliases:__ `[splitpos]`, `[spos]`
 
-Inputs:
+__Inputs:__
 
 * `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
 
 
-Outputs:
+__Outputs:__
 
 * `Z`, Type: `Float`, Default: `0.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Static Display
-Description: Displays one float and one string.
+__Description:__ Displays one float and one string.
 
-InGame: `[Display]`
+__Appearance on Sign:__ `[Display]`
 
-Creation Aliases: `[d]`, `[display]`
+__Creation Aliases:__ `[d]`, `[display]`
 
-Inputs:
+__Inputs:__
 
 * `Value`, Type: `String`, Default: ``
 
 * `Value2`, Type: `Float`, Default: `0.0`
 
 
-Outputs:
-
-
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Teleport Player
-InGame: `[Teleport]`
+__Appearance on Sign:__ `[Teleport]`
 
-Creation Aliases: `[teleport]`, `[tp]`
+__Creation Aliases:__ `[teleport]`, `[tp]`
 
-Inputs:
+__Inputs:__
 
 * `Player`, Type: `String`, Default: ``
 
@@ -513,25 +498,19 @@ Inputs:
 * `Teleport`, Type: `Float`, Default: `0.0`
 
 
-Outputs:
-
-
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 
 
 
 # Toggle Number
-InGame: `[ToggleNum]`
+__Appearance on Sign:__ `[ToggleNum]`
 
-Creation Aliases: `[tog]`, `[toggle]`, `[togglenum]`
+__Creation Aliases:__ `[tog]`, `[toggle]`, `[togglenum]`
 
-Inputs:
-
-
-Outputs:
+__Outputs:__
 
 * `Value`, Type: `Float`, Default: `0.0`
 
 
-Permissions: `link.basic`
+__Permissions:__ `link.basic`
 

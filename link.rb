@@ -105,27 +105,31 @@ class Link < RubyPlugin
 			info = "# "+gate.name+"\n"
 			desc = @gate_desc[gatec]
 			if desc!=nil
-				info+="Description: #{desc}\n\n"
+				info+="__Description:__ #{desc}\n\n"
 			end
-			info+= "InGame: `#{gate.id}`\n\n"
+			info+= "__Appearance on Sign:__ `#{gate.id}`\n\n"
 			alia = []
 			@gate_ref.each do |k, v|
 				if v == gatec
 					alia.push k
 				end
 			end
-			info+= "Creation Aliases: `#{alia.sort.join("`, `")}`\n\n"
+			info+= "__Creation Aliases:__ `#{alia.sort.join("`, `")}`\n\n"
 			input = ""
 			gate.inputs.each do |k,v|
 				input += "* `#{k}`, Type: `#{v.class.to_s}`, Default: `#{v.to_s}`\n\n"
 			end
-			info+= "Inputs:\n\n"+input+"\n"
+			if input!=""
+				info+= "__Inputs:__\n\n"+input+"\n"
+			end
 			output = ""
 			gate.outputs.each do |k,v|
 				output = "* `#{k}`, Type: `#{v[0].class.to_s}`, Default: `#{v[0].to_s}`\n\n"
 			end
-			info+= "Outputs:\n\n"+output+"\n"
-			info+= "Permissions: `#{gate.perms}`\n\n"
+			if output!=""
+				info+= "__Outputs:__\n\n"+output+"\n"
+			end
+			info+= "__Permissions:__ `#{gate.perms}`\n\n"
 			debug info
 			gates.push info
 		end
