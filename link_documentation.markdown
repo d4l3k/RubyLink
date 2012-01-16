@@ -98,6 +98,34 @@ __Permissions:__ `link.basic`
 
 
 
+# Arrow Turret
+__Description:__ Fires arrows at a position.
+
+__Appearance on Sign:__ `[Turret]`
+
+__Creation Aliases:__ `[arrow]`, `[turret]`
+
+__Inputs:__
+
+* `Target`, Type: `Position`, Default: `[0.0,0.0,2.0]`
+
+* `Launch`, Type: `Float`, Default: `0.0`
+
+* `Speed`, Type: `Float`, Default: `1.2`
+
+* `Number`, Type: `Float`, Default: `1.0`
+
+* `Fire?`, Type: `Float`, Default: `0.0`
+
+* `Bounce?`, Type: `Float`, Default: `0.0`
+
+* `Spread`, Type: `Float`, Default: `6.0`
+
+
+__Permissions:__ `link.basic`
+
+
+
 # Button
 __Description:__ Goes to the high value then the low value. Can use sign arguments. Line 2: <high value>[,<low value>]
 

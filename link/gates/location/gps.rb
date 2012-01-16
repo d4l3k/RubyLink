@@ -4,6 +4,9 @@ class GPS < Gate
 		@id = "[GPS]"
 		location = Position.new(0.0,0.0,0.0)
 		location.set_block @block.get_block
+		location.x+=0.5
+		location.y+=0.5
+		location.z+=0.5
 		add_output "Position", location
 		event.setLine 1,"X: "+location.x.to_s
 		event.setLine 2,"Y: "+location.y.to_s
@@ -14,6 +17,9 @@ class GPS < Gate
 	def update_display
 		location = Position.new(0.0,0.0,0.0)
 		location.set_block @block.get_block
+		location.x+=0.5
+		location.y+=0.5
+		location.z+=0.5
 		set_line 1,"X: "+location.x.to_s
 		set_line 2,"Y: "+location.y.to_s
 		set_line 3,"Z: "+location.z.to_s	

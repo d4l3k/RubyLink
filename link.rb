@@ -28,6 +28,8 @@ import 'org.bukkit.Material'
 import 'org.bukkit.event.block.Action'
 import 'org.bukkit.craftbukkit.block.CraftSign'
 import 'org.bukkit.event.block.SignChangeEvent'
+import 'org.bukkit.Location'
+import 'org.bukkit.util.Vector'
 
 require 'yaml'
 
