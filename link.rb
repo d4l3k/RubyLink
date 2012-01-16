@@ -34,9 +34,12 @@ require 'yaml'
 def add_type name, type
 	$link.gate_ref.store name.downcase, type
 end
+def add_desc type, desc
+	$link.gate_desc.store type, desc
+end
 
 class Link < RubyPlugin
-	attr_accessor :gate_ref
+	attr_accessor :gate_ref, :gate_desc
 	#### I/O to Console ####
 	# TODO: Set logger prefix & use @log.info, @log.debug, etc.
 	def info msg # Standard output to console.
@@ -88,40 +91,38 @@ class Link < RubyPlugin
 		end
 		debug "Saved #{$gates.length} gates."
 	end
-	def generate_docs
+	def generate_docs(player)
 		debug "Generating Documents"
 		gates = []
-		world = getServer.getWorld("world")
+		world = player.getWorld()
 		debug "World: #{world.getName}"
 		block = world.getBlockAt(0,0,2)
-		#block.setType(Material::SIGN_POST)
-		player = getServer.getPlayer("d4l3k")
 		debug "Player: #{player.getName}"
 		event = SignChangeEvent.new(block, player, ["","","",""])
 		@gate_ref.values.uniq.each do |gatec|
 			debug "Proccessing: #{gatec.to_s}"
 			gate = gatec.new event
 			info = "# "+gate.name+"\n"
-			info+= "* In game display: `#{gate.id}`\n"
+			desc = @gate_desc[gatec]
+			if desc!=nil
+				info+="* Description: #{desc}"
+			end
+			info+= "* InGame: `#{gate.id}`\n"
 			alia = []
 			@gate_ref.each do |k, v|
 				if v == gatec
 					alia.push k
 				end
 			end
-			info+= "* Creation Names: `#{alia.join("`, `")}`\n"
+			info+= "* Creation Aliases: `#{alia.sort.join("`, `")}`\n"
 			input = ""
-			i=1
 			gate.inputs.each do |k,v|
-				input += "#{i}. `#{k}`, Type: `#{v.class.to_s}`, Default: `#{v.to_s}`\n"
-				i+=1
+				input += "`#{k}`, Type: `#{v.class.to_s}`, Default: `#{v.to_s}`\n\n"
 			end
 			info+= "* Inputs:\n\n"+input+"\n"
 			output = ""
-			i=1
 			gate.outputs.each do |k,v|
-				output = "#{i}. `#{k}`, Type: `#{v[0].class.to_s}`, Default: `#{v[0].to_s}`\n"
-				i+=1
+				output = "`#{k}`, Type: `#{v[0].class.to_s}`, Default: `#{v[0].to_s}`\n\n"
 			end
 			info+= "* Outputs:\n\n"+output+"\n"
 			info+= "* Permissions: `#{gate.perms}`\n"
@@ -129,7 +130,7 @@ class Link < RubyPlugin
 			gates.push info
 		end
 		final = "Case does not matter for gate creation.\n\n---\n"
-		final += gates.sort.join "\n---\n"
+		final += gates.sort.join "\n\n"
 		gate_file = File.join(File.dirname(__FILE__),"./link_documentation.markdown")
 		File.open(gate_file, "w") do |file|
 			file.print final
@@ -159,6 +160,7 @@ class Link < RubyPlugin
 		$link = self
 		@logger = Logger.getLogger("Minecraft")
 		@gate_ref = {}
+		@gate_desc = {}
 		@player_status = {}
 		$gates=[]
 		load_types
@@ -325,10 +327,13 @@ class Link < RubyPlugin
 		info "Disabled."
 	end
 	def onCommand sender, cmd, label, args
-		if args[0] == "generate"
-			generate_docs
+		player = sender.getPlayer
+		if args.length>0
+			if args[0] == "generate"
+				generate_docs(player)
+				return true
+			end
 		else
-			player = sender.getPlayer
 			if @player_status[player]==nil
 				@player_status.store player, [false, 0]
 			end

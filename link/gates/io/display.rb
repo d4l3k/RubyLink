@@ -19,5 +19,6 @@ class Display < Gate
 	end
 end
 
+add_desc Display, "Displays one float and one string."
 add_type "[Display]", Display
 add_type "[D]", Display

@@ -15,7 +15,6 @@ class AddPos < Gate
 		location.y+= get_input "Y"
 		location.z+= get_input "Z"
 		set_output "Position", location
-		update_display
 	end
 	def update_display
 		location = get_output "Position"
@@ -25,5 +24,6 @@ class AddPos < Gate
 	end
 end
 
+add_desc AddPos, "Adds float values to a position."
 add_type "[AddPos]", AddPos
 add_type "[apos]", AddPos

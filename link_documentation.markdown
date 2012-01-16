@@ -2,8 +2,8 @@ Case does not matter for gate creation.
 
 ---
 # Add Fixnum
-* In game display: `[AddFixnum]`
-* Creation Names: `[+]`, `[add]`, `[addfixnum]`
+* InGame: `[AddFixnum]`
+* Creation Aliases: `[+]`, `[add]`, `[addfixnum]`
 * Inputs:
 
 `Number1`, Type: `Float`, Default: `0.0`
@@ -24,8 +24,8 @@ Case does not matter for gate creation.
 
 
 # Add to Position
-* In game display: `[AddPos]`
-* Creation Names: `[addpos]`, `[apos]`
+* Description: Adds float values to a position.* InGame: `[AddPos]`
+* Creation Aliases: `[addpos]`, `[apos]`
 * Inputs:
 
 `X`, Type: `Float`, Default: `0.0`
@@ -46,8 +46,8 @@ Case does not matter for gate creation.
 
 
 # All >= 1.0
-* In game display: `[All]`
-* Creation Names: `[&&]`, `[all]`
+* InGame: `[All]`
+* Creation Aliases: `[&&]`, `[all]`
 * Inputs:
 
 `Number1`, Type: `Float`, Default: `0.0`
@@ -64,8 +64,8 @@ Case does not matter for gate creation.
 
 
 # Any
-* In game display: `[Any]`
-* Creation Names: `[||]`, `[any]`
+* InGame: `[Any]`
+* Creation Aliases: `[any]`, `[||]`
 * Inputs:
 
 `Number1`, Type: `Float`, Default: `0.0`
@@ -86,8 +86,8 @@ Case does not matter for gate creation.
 
 
 # Button
-* In game display: `[Button]`
-* Creation Names: `[button]`, `[but]`, `[b]`
+* Description: Goes to the high value then the low value. Can use sign arguments. Line 2: <high value>[,<low value>]* InGame: `[Button]`
+* Creation Aliases: `[b]`, `[but]`, `[button]`
 * Inputs:
 
 
@@ -100,8 +100,8 @@ Case does not matter for gate creation.
 
 
 # Constant Value
-* In game display: `[Constant]`
-* Creation Names: `[constant]`, `[value]`, `[c]`
+* Description: Outputs a constant that is set on the 2nd line. Can be a float or a string.* InGame: `[Constant]`
+* Creation Aliases: `[c]`, `[constant]`, `[value]`
 * Inputs:
 
 
@@ -114,8 +114,8 @@ Case does not matter for gate creation.
 
 
 # Divide Fixnum
-* In game display: `[Divide]`
-* Creation Names: `[/]`, `[divide]`
+* InGame: `[Divide]`
+* Creation Aliases: `[/]`, `[divide]`
 * Inputs:
 
 `Number1`, Type: `Float`, Default: `1.0`
@@ -136,8 +136,8 @@ Case does not matter for gate creation.
 
 
 # Equal
-* In game display: `[==]`
-* Creation Names: `[==]`, `[equal]`
+* InGame: `[==]`
+* Creation Aliases: `[==]`, `[equal]`
 * Inputs:
 
 `Number1`, Type: `Float`, Default: `0.0`
@@ -154,8 +154,8 @@ Case does not matter for gate creation.
 
 
 # GPS
-* In game display: `[GPS]`
-* Creation Names: `[gps]`, `[location]`
+* InGame: `[GPS]`
+* Creation Aliases: `[gps]`, `[location]`
 * Inputs:
 
 
@@ -168,8 +168,8 @@ Case does not matter for gate creation.
 
 
 # Greater
-* In game display: `[>]`
-* Creation Names: `[>]`, `[greater]`
+* InGame: `[>]`
+* Creation Aliases: `[>]`, `[greater]`
 * Inputs:
 
 `Number1`, Type: `Float`, Default: `0.0`
@@ -186,8 +186,8 @@ Case does not matter for gate creation.
 
 
 # Greater Than or Equals To
-* In game display: `[>=]`
-* Creation Names: `[>=]`, `[greatequal]`
+* InGame: `[>=]`
+* Creation Aliases: `[>=]`, `[greatequal]`
 * Inputs:
 
 `Number1`, Type: `Float`, Default: `0.0`
@@ -204,8 +204,8 @@ Case does not matter for gate creation.
 
 
 # Less
-* In game display: `[<]`
-* Creation Names: `[<]`, `[less]`
+* InGame: `[<]`
+* Creation Aliases: `[<]`, `[less]`
 * Inputs:
 
 `Number1`, Type: `Float`, Default: `0.0`
@@ -222,8 +222,8 @@ Case does not matter for gate creation.
 
 
 # Less Than or Equals To
-* In game display: `[<=]`
-* Creation Names: `[<=]`, `[lessequal]`
+* InGame: `[<=]`
+* Creation Aliases: `[<=]`, `[lessequal]`
 * Inputs:
 
 `Number1`, Type: `Float`, Default: `0.0`
@@ -240,8 +240,8 @@ Case does not matter for gate creation.
 
 
 # Make Position
-* In game display: `[MakePos]`
-* Creation Names: `[makepos]`, `[mpos]`
+* Description: Makes a position out of three float values. (X, Y, Z)* InGame: `[MakePos]`
+* Creation Aliases: `[makepos]`, `[mpos]`
 * Inputs:
 
 `X`, Type: `Float`, Default: `0.0`
@@ -260,8 +260,8 @@ Case does not matter for gate creation.
 
 
 # Minus Fixnum
-* In game display: `[MinusFixnum]`
-* Creation Names: `[-]`, `[minus]`, `[minusfixnum]`
+* InGame: `[MinusFixnum]`
+* Creation Aliases: `[-]`, `[minus]`, `[minusfixnum]`
 * Inputs:
 
 `Number1`, Type: `Float`, Default: `0.0`
@@ -282,8 +282,8 @@ Case does not matter for gate creation.
 
 
 # Multiply Fixnum
-* In game display: `[Multiply]`
-* Creation Names: `[*]`, `[multiply]`
+* InGame: `[Multiply]`
+* Creation Aliases: `[*]`, `[multiply]`
 * Inputs:
 
 `Number1`, Type: `Float`, Default: `1.0`
@@ -304,8 +304,8 @@ Case does not matter for gate creation.
 
 
 # Not Equal
-* In game display: `[!=]`
-* Creation Names: `[!=]`, `[notequal]`
+* InGame: `[!=]`
+* Creation Aliases: `[!=]`, `[notequal]`
 * Inputs:
 
 `Number1`, Type: `Float`, Default: `0.0`
@@ -322,8 +322,8 @@ Case does not matter for gate creation.
 
 
 # Player Position
-* In game display: `[PlayerPos]`
-* Creation Names: `[playerpos]`, `[ppos]`
+* InGame: `[PlayerPos]`
+* Creation Aliases: `[playerpos]`, `[ppos]`
 * Inputs:
 
 `Player`, Type: `String`, Default: `X: 0.0`
@@ -338,8 +338,8 @@ Case does not matter for gate creation.
 
 
 # Player Sensor
-* In game display: `[PlayrSensor]`
-* Creation Names: `[psensor]`, `[playersensor]`
+* InGame: `[PlayrSensor]`
+* Creation Aliases: `[playersensor]`, `[psensor]`
 * Inputs:
 
 `Update`, Type: `Float`, Default: `0.0`
@@ -356,8 +356,8 @@ Case does not matter for gate creation.
 
 
 # Redstone Power Input
-* In game display: `[RedstoneIn]`
-* Creation Names: `[redstonein]`, `[rin]`
+* InGame: `[RedstoneIn]`
+* Creation Aliases: `[redstonein]`, `[rin]`
 * Inputs:
 
 
@@ -370,8 +370,8 @@ Case does not matter for gate creation.
 
 
 # Signal Delay
-* In game display: `[Delay]`
-* Creation Names: `[delay]`
+* Description: Delays a float signal for a specified number of ingame ticks.* InGame: `[Delay]`
+* Creation Aliases: `[delay]`
 * Inputs:
 
 `Value`, Type: `Float`, Default: `0.0`
@@ -388,8 +388,8 @@ Case does not matter for gate creation.
 
 
 # Split Position
-* In game display: `[SplitPos]`
-* Creation Names: `[splitpos]`, `[spos]`
+* InGame: `[SplitPos]`
+* Creation Aliases: `[splitpos]`, `[spos]`
 * Inputs:
 
 `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
@@ -404,8 +404,8 @@ Case does not matter for gate creation.
 
 
 # Static Display
-* In game display: `[Display]`
-* Creation Names: `[display]`, `[d]`
+* Description: Displays one float and one string.* InGame: `[Display]`
+* Creation Aliases: `[d]`, `[display]`
 * Inputs:
 
 `Value`, Type: `String`, Default: ``
@@ -420,8 +420,8 @@ Case does not matter for gate creation.
 
 
 # Teleport Player
-* In game display: `[Teleport]`
-* Creation Names: `[tp]`, `[teleport]`
+* InGame: `[Teleport]`
+* Creation Aliases: `[teleport]`, `[tp]`
 * Inputs:
 
 `Player`, Type: `String`, Default: ``
@@ -438,8 +438,8 @@ Case does not matter for gate creation.
 
 
 # Toggle Number
-* In game display: `[ToggleNum]`
-* Creation Names: `[tog]`, `[toggle]`, `[togglenum]`
+* InGame: `[ToggleNum]`
+* Creation Aliases: `[tog]`, `[toggle]`, `[togglenum]`
 * Inputs:
 
 

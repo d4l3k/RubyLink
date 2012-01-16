@@ -10,7 +10,6 @@ class LocMake < Gate
 	end
 	def update input, old_val, new_val
 		set_output "Position", Position.new(get_input("X"), get_input( "Y"), get_input( "Z"))
-		update_display
 	end
 	def update_display
 		set_line 1,"X: "+get_input("X").to_s
@@ -19,5 +18,6 @@ class LocMake < Gate
 	end
 end
 
+add_desc LocMake, "Makes a position out of three float values. (X, Y, Z)"
 add_type "[makepos]", LocMake
 add_type "[mpos]", LocMake

@@ -28,6 +28,7 @@ class Button < Gate
 	end
 end
 
+add_desc Button, "Goes to the high value then the low value. Can use sign arguments. Line 2: <high value>[,<low value>]"
 add_type "[Button]", Button
 add_type "[But]", Button
 add_type "[B]", Button

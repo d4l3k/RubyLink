@@ -15,6 +15,7 @@ class ConstantValue < Gate
 	end
 end
 
+add_desc ConstantValue, "Outputs a constant that is set on the 2nd line. Can be a float or a string."
 add_type "[Constant]", ConstantValue
 add_type "[Value]", ConstantValue
 add_type "[C]", ConstantValue

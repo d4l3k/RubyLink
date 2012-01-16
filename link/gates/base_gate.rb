@@ -1,8 +1,9 @@
 class Gate
-	attr_accessor :name,:id,:perm,:block,:inputs,:outputs
+	attr_accessor :name,:id,:perm,:block,:inputs,:outputs,:perms
 	def initialize event
 		@name = "BaseGate"
 		@id = "[BaseGate]"
+		@perms = "link.basic"
 		@block = LinkBlock.new(event.block)
 		@inputs = {}
 		@outputs = {}

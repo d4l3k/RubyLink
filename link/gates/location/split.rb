@@ -12,7 +12,6 @@ class LocSplit < Gate
 		set_output "X", new_val.x
 		set_output "Y", new_val.y
 		set_output "Z", new_val.z
-		update_display
 	end
 	def update_display
 		location = get_input "Position"

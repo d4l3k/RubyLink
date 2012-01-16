@@ -18,5 +18,5 @@ class Delay < Gate
 		set_line 2, "Ticks: "+get_input("Delay").to_i.to_s
 	end
 end
-
+add_desc Delay, "Delays a float signal for a specified number of ingame ticks."
 add_type "[delay]", Delay
