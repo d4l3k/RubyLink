@@ -71,7 +71,8 @@ class Gate
 	def setup event
 		# Called when new gate is made.
 	end
-	def redstone
+	def redstone event
+		# Called when the redstone value of a gate is changed.
 	end
 	def resume
 		# Called when the gate is made/loaded.
@@ -80,10 +81,13 @@ class Gate
 		# Called when the gate is unloaded/destroyed
 	end
 	def update input, old_val, new_val
+		# Called an input is changed.
 	end
 	def update_display
+		# Called when the display should be updated.
 	end
 	def clicked event
+		# Called when something clicks the gate.
 	end
 end
 
