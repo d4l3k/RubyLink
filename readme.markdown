@@ -1,17 +1,20 @@
 Gate Todo
 ----
 1. Permissions
+
 Data Types
 ----
 1. Entities
 2. Mobs
 3. Items
 4. Vectors
+
 Sensors
 ----
 1. Entity
 2. Mob
 3. Block
+
 Mechanics
 ----
 1. Arrow Launcher
@@ -23,6 +26,7 @@ Mechanics
 7. Console command (Strict permissions)
 8. Chat commands (Send message to player/global)
 9. Block manipulation (Strict)
+
 Redstone
 ----
 1. Output
