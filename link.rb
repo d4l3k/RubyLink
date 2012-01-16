@@ -105,31 +105,31 @@ class Link < RubyPlugin
 			info = "# "+gate.name+"\n"
 			desc = @gate_desc[gatec]
 			if desc!=nil
-				info+="* Description: #{desc}"
+				info+="Description: #{desc}\n\n"
 			end
-			info+= "* InGame: `#{gate.id}`\n"
+			info+= "InGame: `#{gate.id}`\n\n"
 			alia = []
 			@gate_ref.each do |k, v|
 				if v == gatec
 					alia.push k
 				end
 			end
-			info+= "* Creation Aliases: `#{alia.sort.join("`, `")}`\n"
+			info+= "Creation Aliases: `#{alia.sort.join("`, `")}`\n\n"
 			input = ""
 			gate.inputs.each do |k,v|
-				input += "`#{k}`, Type: `#{v.class.to_s}`, Default: `#{v.to_s}`\n\n"
+				input += "* `#{k}`, Type: `#{v.class.to_s}`, Default: `#{v.to_s}`\n\n"
 			end
-			info+= "* Inputs:\n\n"+input+"\n"
+			info+= "Inputs:\n\n"+input+"\n"
 			output = ""
 			gate.outputs.each do |k,v|
-				output = "`#{k}`, Type: `#{v[0].class.to_s}`, Default: `#{v[0].to_s}`\n\n"
+				output = "* `#{k}`, Type: `#{v[0].class.to_s}`, Default: `#{v[0].to_s}`\n\n"
 			end
-			info+= "* Outputs:\n\n"+output+"\n"
-			info+= "* Permissions: `#{gate.perms}`\n"
+			info+= "Outputs:\n\n"+output+"\n"
+			info+= "Permissions: `#{gate.perms}`\n\n"
 			debug info
 			gates.push info
 		end
-		final = "Case does not matter for gate creation.\n\n---\n"
+		final = "Case does not matter for gate creation.\n\n"
 		final += gates.sort.join "\n\n"
 		gate_file = File.join(File.dirname(__FILE__),"./link_documentation.markdown")
 		File.open(gate_file, "w") do |file|

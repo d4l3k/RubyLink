@@ -1,451 +1,537 @@
 Case does not matter for gate creation.
 
----
 # Add Fixnum
-* InGame: `[AddFixnum]`
-* Creation Aliases: `[+]`, `[add]`, `[addfixnum]`
-* Inputs:
+InGame: `[AddFixnum]`
 
-`Number1`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[+]`, `[add]`, `[addfixnum]`
 
-`Number2`, Type: `Float`, Default: `0.0`
+Inputs:
 
-`Number3`, Type: `Float`, Default: `0.0`
+* `Number1`, Type: `Float`, Default: `0.0`
 
-`Number4`, Type: `Float`, Default: `0.0`
+* `Number2`, Type: `Float`, Default: `0.0`
 
+* `Number3`, Type: `Float`, Default: `0.0`
 
-* Outputs:
-
-`Product`, Type: `Float`, Default: `0.0`
+* `Number4`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `Product`, Type: `Float`, Default: `0.0`
+
+
+Permissions: `link.basic`
+
 
 
 # Add to Position
-* Description: Adds float values to a position.* InGame: `[AddPos]`
-* Creation Aliases: `[addpos]`, `[apos]`
-* Inputs:
+Description: Adds float values to a position.
 
-`X`, Type: `Float`, Default: `0.0`
+InGame: `[AddPos]`
 
-`Y`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[addpos]`, `[apos]`
 
-`Z`, Type: `Float`, Default: `0.0`
+Inputs:
 
-`Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
+* `X`, Type: `Float`, Default: `0.0`
+
+* `Y`, Type: `Float`, Default: `0.0`
+
+* `Z`, Type: `Float`, Default: `0.0`
+
+* `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
 
 
-* Outputs:
+Outputs:
 
-`Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
+* `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
 
 
-* Permissions: `link.basic`
+Permissions: `link.basic`
+
 
 
 # All >= 1.0
-* InGame: `[All]`
-* Creation Aliases: `[&&]`, `[all]`
-* Inputs:
+InGame: `[All]`
 
-`Number1`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[&&]`, `[all]`
 
-`Number2`, Type: `Float`, Default: `0.0`
+Inputs:
 
+* `Number1`, Type: `Float`, Default: `0.0`
 
-* Outputs:
-
-`True`, Type: `Float`, Default: `0.0`
+* `Number2`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `True`, Type: `Float`, Default: `0.0`
+
+
+Permissions: `link.basic`
+
 
 
 # Any
-* InGame: `[Any]`
-* Creation Aliases: `[any]`, `[||]`
-* Inputs:
+InGame: `[Any]`
 
-`Number1`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[any]`, `[||]`
 
-`Number2`, Type: `Float`, Default: `0.0`
+Inputs:
 
-`Number3`, Type: `Float`, Default: `0.0`
+* `Number1`, Type: `Float`, Default: `0.0`
 
-`Number4`, Type: `Float`, Default: `0.0`
+* `Number2`, Type: `Float`, Default: `0.0`
 
+* `Number3`, Type: `Float`, Default: `0.0`
 
-* Outputs:
-
-`True`, Type: `Float`, Default: `0.0`
+* `Number4`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `True`, Type: `Float`, Default: `0.0`
+
+
+Permissions: `link.basic`
+
 
 
 # Button
-* Description: Goes to the high value then the low value. Can use sign arguments. Line 2: <high value>[,<low value>]* InGame: `[Button]`
-* Creation Aliases: `[b]`, `[but]`, `[button]`
-* Inputs:
+Description: Goes to the high value then the low value. Can use sign arguments. Line 2: <high value>[,<low value>]
+
+InGame: `[Button]`
+
+Creation Aliases: `[b]`, `[but]`, `[button]`
+
+Inputs:
 
 
-* Outputs:
+Outputs:
 
-`Value`, Type: `Float`, Default: `0.0`
+* `Value`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Permissions: `link.basic`
+
 
 
 # Constant Value
-* Description: Outputs a constant that is set on the 2nd line. Can be a float or a string.* InGame: `[Constant]`
-* Creation Aliases: `[c]`, `[constant]`, `[value]`
-* Inputs:
+Description: Outputs a constant that is set on the 2nd line. Can be a float or a string.
+
+InGame: `[Constant]`
+
+Creation Aliases: `[c]`, `[constant]`, `[value]`
+
+Inputs:
 
 
-* Outputs:
+Outputs:
 
-`Value`, Type: `Float`, Default: `1.0`
+* `Value`, Type: `Float`, Default: `1.0`
 
 
-* Permissions: `link.basic`
+Permissions: `link.basic`
+
 
 
 # Divide Fixnum
-* InGame: `[Divide]`
-* Creation Aliases: `[/]`, `[divide]`
-* Inputs:
+InGame: `[Divide]`
 
-`Number1`, Type: `Float`, Default: `1.0`
+Creation Aliases: `[/]`, `[divide]`
 
-`Number2`, Type: `Float`, Default: `1.0`
+Inputs:
 
-`Number3`, Type: `Float`, Default: `1.0`
+* `Number1`, Type: `Float`, Default: `1.0`
 
-`Number4`, Type: `Float`, Default: `1.0`
+* `Number2`, Type: `Float`, Default: `1.0`
 
+* `Number3`, Type: `Float`, Default: `1.0`
 
-* Outputs:
-
-`Product`, Type: `Float`, Default: `1.0`
+* `Number4`, Type: `Float`, Default: `1.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `Product`, Type: `Float`, Default: `1.0`
+
+
+Permissions: `link.basic`
+
 
 
 # Equal
-* InGame: `[==]`
-* Creation Aliases: `[==]`, `[equal]`
-* Inputs:
+InGame: `[==]`
 
-`Number1`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[==]`, `[equal]`
 
-`Number2`, Type: `Float`, Default: `0.0`
+Inputs:
 
+* `Number1`, Type: `Float`, Default: `0.0`
 
-* Outputs:
-
-`True`, Type: `Float`, Default: `1.0`
+* `Number2`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `True`, Type: `Float`, Default: `1.0`
+
+
+Permissions: `link.basic`
+
 
 
 # GPS
-* InGame: `[GPS]`
-* Creation Aliases: `[gps]`, `[location]`
-* Inputs:
+InGame: `[GPS]`
+
+Creation Aliases: `[gps]`, `[location]`
+
+Inputs:
 
 
-* Outputs:
+Outputs:
 
-`Position`, Type: `Position`, Default: `[0.0,0.0,2.0]`
+* `Position`, Type: `Position`, Default: `[0.0,0.0,2.0]`
 
 
-* Permissions: `link.basic`
+Permissions: `link.basic`
+
 
 
 # Greater
-* InGame: `[>]`
-* Creation Aliases: `[>]`, `[greater]`
-* Inputs:
+InGame: `[>]`
 
-`Number1`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[>]`, `[greater]`
 
-`Number2`, Type: `Float`, Default: `0.0`
+Inputs:
 
+* `Number1`, Type: `Float`, Default: `0.0`
 
-* Outputs:
-
-`True`, Type: `Float`, Default: `0.0`
+* `Number2`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `True`, Type: `Float`, Default: `0.0`
+
+
+Permissions: `link.basic`
+
 
 
 # Greater Than or Equals To
-* InGame: `[>=]`
-* Creation Aliases: `[>=]`, `[greatequal]`
-* Inputs:
+InGame: `[>=]`
 
-`Number1`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[>=]`, `[greatequal]`
 
-`Number2`, Type: `Float`, Default: `0.0`
+Inputs:
 
+* `Number1`, Type: `Float`, Default: `0.0`
 
-* Outputs:
-
-`True`, Type: `Float`, Default: `1.0`
+* `Number2`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `True`, Type: `Float`, Default: `1.0`
+
+
+Permissions: `link.basic`
+
 
 
 # Less
-* InGame: `[<]`
-* Creation Aliases: `[<]`, `[less]`
-* Inputs:
+InGame: `[<]`
 
-`Number1`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[<]`, `[less]`
 
-`Number2`, Type: `Float`, Default: `0.0`
+Inputs:
 
+* `Number1`, Type: `Float`, Default: `0.0`
 
-* Outputs:
-
-`True`, Type: `Float`, Default: `0.0`
+* `Number2`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `True`, Type: `Float`, Default: `0.0`
+
+
+Permissions: `link.basic`
+
 
 
 # Less Than or Equals To
-* InGame: `[<=]`
-* Creation Aliases: `[<=]`, `[lessequal]`
-* Inputs:
+InGame: `[<=]`
 
-`Number1`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[<=]`, `[lessequal]`
 
-`Number2`, Type: `Float`, Default: `0.0`
+Inputs:
 
+* `Number1`, Type: `Float`, Default: `0.0`
 
-* Outputs:
-
-`True`, Type: `Float`, Default: `1.0`
+* `Number2`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `True`, Type: `Float`, Default: `1.0`
+
+
+Permissions: `link.basic`
+
 
 
 # Make Position
-* Description: Makes a position out of three float values. (X, Y, Z)* InGame: `[MakePos]`
-* Creation Aliases: `[makepos]`, `[mpos]`
-* Inputs:
+Description: Makes a position out of three float values. (X, Y, Z)
 
-`X`, Type: `Float`, Default: `0.0`
+InGame: `[MakePos]`
 
-`Y`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[makepos]`, `[mpos]`
 
-`Z`, Type: `Float`, Default: `0.0`
+Inputs:
+
+* `X`, Type: `Float`, Default: `0.0`
+
+* `Y`, Type: `Float`, Default: `0.0`
+
+* `Z`, Type: `Float`, Default: `0.0`
 
 
-* Outputs:
+Outputs:
 
-`Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
+* `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
 
 
-* Permissions: `link.basic`
+Permissions: `link.basic`
+
 
 
 # Minus Fixnum
-* InGame: `[MinusFixnum]`
-* Creation Aliases: `[-]`, `[minus]`, `[minusfixnum]`
-* Inputs:
+InGame: `[MinusFixnum]`
 
-`Number1`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[-]`, `[minus]`, `[minusfixnum]`
 
-`Number2`, Type: `Float`, Default: `0.0`
+Inputs:
 
-`Number3`, Type: `Float`, Default: `0.0`
+* `Number1`, Type: `Float`, Default: `0.0`
 
-`Number4`, Type: `Float`, Default: `0.0`
+* `Number2`, Type: `Float`, Default: `0.0`
 
+* `Number3`, Type: `Float`, Default: `0.0`
 
-* Outputs:
-
-`Product`, Type: `Float`, Default: `0.0`
+* `Number4`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `Product`, Type: `Float`, Default: `0.0`
+
+
+Permissions: `link.basic`
+
 
 
 # Multiply Fixnum
-* InGame: `[Multiply]`
-* Creation Aliases: `[*]`, `[multiply]`
-* Inputs:
+InGame: `[Multiply]`
 
-`Number1`, Type: `Float`, Default: `1.0`
+Creation Aliases: `[*]`, `[multiply]`
 
-`Number2`, Type: `Float`, Default: `1.0`
+Inputs:
 
-`Number3`, Type: `Float`, Default: `1.0`
+* `Number1`, Type: `Float`, Default: `1.0`
 
-`Number4`, Type: `Float`, Default: `1.0`
+* `Number2`, Type: `Float`, Default: `1.0`
 
+* `Number3`, Type: `Float`, Default: `1.0`
 
-* Outputs:
-
-`Product`, Type: `Float`, Default: `1.0`
+* `Number4`, Type: `Float`, Default: `1.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `Product`, Type: `Float`, Default: `1.0`
+
+
+Permissions: `link.basic`
+
 
 
 # Not Equal
-* InGame: `[!=]`
-* Creation Aliases: `[!=]`, `[notequal]`
-* Inputs:
+InGame: `[!=]`
 
-`Number1`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[!=]`, `[notequal]`
 
-`Number2`, Type: `Float`, Default: `0.0`
+Inputs:
 
+* `Number1`, Type: `Float`, Default: `0.0`
 
-* Outputs:
-
-`True`, Type: `Float`, Default: `1.0`
+* `Number2`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `True`, Type: `Float`, Default: `1.0`
+
+
+Permissions: `link.basic`
+
 
 
 # Player Position
-* InGame: `[PlayerPos]`
-* Creation Aliases: `[playerpos]`, `[ppos]`
-* Inputs:
+InGame: `[PlayerPos]`
 
-`Player`, Type: `String`, Default: `X: 0.0`
+Creation Aliases: `[playerpos]`, `[ppos]`
 
+Inputs:
 
-* Outputs:
-
-`Position`, Type: `Position`, Default: `[0.0,0.0,2.0]`
+* `Player`, Type: `String`, Default: `X: 0.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `Position`, Type: `Position`, Default: `[0.0,0.0,2.0]`
+
+
+Permissions: `link.basic`
+
 
 
 # Player Sensor
-* InGame: `[PlayrSensor]`
-* Creation Aliases: `[playersensor]`, `[psensor]`
-* Inputs:
+InGame: `[PlayrSensor]`
 
-`Update`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[playersensor]`, `[psensor]`
 
-`Radius`, Type: `Float`, Default: `10.0`
+Inputs:
 
+* `Update`, Type: `Float`, Default: `0.0`
 
-* Outputs:
-
-`Player`, Type: `String`, Default: ``
+* `Radius`, Type: `Float`, Default: `10.0`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `Player`, Type: `String`, Default: ``
+
+
+Permissions: `link.basic`
+
 
 
 # Redstone Power Input
-* InGame: `[RedstoneIn]`
-* Creation Aliases: `[redstonein]`, `[rin]`
-* Inputs:
+InGame: `[RedstoneIn]`
+
+Creation Aliases: `[redstonein]`, `[rin]`
+
+Inputs:
 
 
-* Outputs:
+Outputs:
 
-`Power`, Type: `Float`, Default: `0.0`
+* `Power`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Permissions: `link.basic`
+
 
 
 # Signal Delay
-* Description: Delays a float signal for a specified number of ingame ticks.* InGame: `[Delay]`
-* Creation Aliases: `[delay]`
-* Inputs:
+Description: Delays a float signal for a specified number of ingame ticks.
 
-`Value`, Type: `Float`, Default: `0.0`
+InGame: `[Delay]`
 
-`Delay`, Type: `Float`, Default: `10.0`
+Creation Aliases: `[delay]`
+
+Inputs:
+
+* `Value`, Type: `Float`, Default: `0.0`
+
+* `Delay`, Type: `Float`, Default: `10.0`
 
 
-* Outputs:
+Outputs:
 
-`Value`, Type: `Float`, Default: `0.0`
+* `Value`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Permissions: `link.basic`
+
 
 
 # Split Position
-* InGame: `[SplitPos]`
-* Creation Aliases: `[splitpos]`, `[spos]`
-* Inputs:
+InGame: `[SplitPos]`
 
-`Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
+Creation Aliases: `[splitpos]`, `[spos]`
 
+Inputs:
 
-* Outputs:
-
-`Z`, Type: `Float`, Default: `0.0`
+* `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
 
 
-* Permissions: `link.basic`
+Outputs:
+
+* `Z`, Type: `Float`, Default: `0.0`
+
+
+Permissions: `link.basic`
+
 
 
 # Static Display
-* Description: Displays one float and one string.* InGame: `[Display]`
-* Creation Aliases: `[d]`, `[display]`
-* Inputs:
+Description: Displays one float and one string.
 
-`Value`, Type: `String`, Default: ``
+InGame: `[Display]`
 
-`Value2`, Type: `Float`, Default: `0.0`
+Creation Aliases: `[d]`, `[display]`
+
+Inputs:
+
+* `Value`, Type: `String`, Default: ``
+
+* `Value2`, Type: `Float`, Default: `0.0`
 
 
-* Outputs:
+Outputs:
 
 
-* Permissions: `link.basic`
+Permissions: `link.basic`
+
 
 
 # Teleport Player
-* InGame: `[Teleport]`
-* Creation Aliases: `[teleport]`, `[tp]`
-* Inputs:
+InGame: `[Teleport]`
 
-`Player`, Type: `String`, Default: ``
+Creation Aliases: `[teleport]`, `[tp]`
 
-`Position`, Type: `Position`, Default: `[0.0,0.0,2.0]`
+Inputs:
 
-`Teleport`, Type: `Float`, Default: `0.0`
+* `Player`, Type: `String`, Default: ``
+
+* `Position`, Type: `Position`, Default: `[0.0,0.0,2.0]`
+
+* `Teleport`, Type: `Float`, Default: `0.0`
 
 
-* Outputs:
+Outputs:
 
 
-* Permissions: `link.basic`
+Permissions: `link.basic`
+
 
 
 # Toggle Number
-* InGame: `[ToggleNum]`
-* Creation Aliases: `[tog]`, `[toggle]`, `[togglenum]`
-* Inputs:
+InGame: `[ToggleNum]`
+
+Creation Aliases: `[tog]`, `[toggle]`, `[togglenum]`
+
+Inputs:
 
 
-* Outputs:
+Outputs:
 
-`Value`, Type: `Float`, Default: `0.0`
+* `Value`, Type: `Float`, Default: `0.0`
 
 
-* Permissions: `link.basic`
+Permissions: `link.basic`
+
