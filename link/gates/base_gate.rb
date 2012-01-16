@@ -71,7 +71,7 @@ class Gate
 	def setup event
 		# Called when new gate is made.
 	end
-	def redstone event
+	def redstone_change event, old_val, new_val
 		# Called when the redstone value of a gate is changed.
 	end
 	def resume

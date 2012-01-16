@@ -140,7 +140,7 @@ class Link < RubyPlugin
 			if (mat==Material::WALL_SIGN||mat==Material::SIGN_POST)
 				gate = get_gate block
 				if gate!=nil
-					gate.redstone_change event
+					gate.redstone_change event, event.getOldCurrent.to_f, event.getNewCurrent.to_f
 				end
 			end
 
