@@ -71,6 +71,8 @@ class Gate
 	def setup event
 		# Called when new gate is made.
 	end
+	def redstone
+	end
 	def resume
 		# Called when the gate is made/loaded.
 	end

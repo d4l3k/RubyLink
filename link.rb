@@ -133,6 +133,16 @@ class Link < RubyPlugin
 					save_gates
 				end
 			end
+		end
+		registerEvent(Event::Type::REDSTONE_CHANGE, Event::Priority::Monitor) do |event|
+			block = event.getBlock
+			mat = block.getType
+			if (mat==Material::WALL_SIGN||mat==Material::SIGN_POST)
+				gate = get_gate block
+				if gate!=nil
+					gate.redstone_change event
+				end
+			end
 
 		end
 		registerEvent(Event::Type::PLAYER_INTERACT, Event::Priority::Monitor) do |event|
