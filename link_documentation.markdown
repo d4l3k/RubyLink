@@ -2,7 +2,8 @@ Case does not matter for gate creation.
 # Add Fixnum  
 __Appearance on Sign:__ `[AddFixnum]`  
 __Creation Aliases:__ `[+]`, `[add]`, `[addfixnum]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Number1`, Type: `Float`, Default: `0.0`   
 * `Number2`, Type: `Float`, Default: `0.0`   
 * `Number3`, Type: `Float`, Default: `0.0`   
@@ -15,7 +16,8 @@ __Permissions:__ `link.basic`, `link.gate.addfixnum`
 __Description:__ Adds float values to a position.  
 __Appearance on Sign:__ `[AddPos]`  
 __Creation Aliases:__ `[addpos]`, `[apos]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `X`, Type: `Float`, Default: `0.0`   
 * `Y`, Type: `Float`, Default: `0.0`   
 * `Z`, Type: `Float`, Default: `0.0`   
@@ -27,7 +29,8 @@ __Permissions:__ `link.basic`, `link.gate.addpos`
 # All >= 1.0  
 __Appearance on Sign:__ `[All]`  
 __Creation Aliases:__ `[&&]`, `[all]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Number1`, Type: `Float`, Default: `0.0`   
 * `Number2`, Type: `Float`, Default: `0.0`  
 
@@ -37,7 +40,8 @@ __Permissions:__ `link.basic`, `link.gate.all`
 # Any  
 __Appearance on Sign:__ `[Any]`  
 __Creation Aliases:__ `[any]`, `[||]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Number1`, Type: `Float`, Default: `0.0`   
 * `Number2`, Type: `Float`, Default: `0.0`   
 * `Number3`, Type: `Float`, Default: `0.0`   
@@ -50,7 +54,8 @@ __Permissions:__ `link.basic`, `link.gate.any`
 __Description:__ Fires arrows at a position.  
 __Appearance on Sign:__ `[Turret]`  
 __Creation Aliases:__ `[arrow]`, `[turret]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Target`, Type: `Position`, Default: `[0.0,0.0,2.0]`   
 * `Launch`, Type: `Float`, Default: `0.0`   
 * `Speed`, Type: `Float`, Default: `1.2`   
@@ -77,7 +82,8 @@ __Permissions:__ `link.basic`, `link.gate.constant`
 # Divide Fixnum  
 __Appearance on Sign:__ `[Divide]`  
 __Creation Aliases:__ `[/]`, `[divide]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Number1`, Type: `Float`, Default: `1.0`   
 * `Number2`, Type: `Float`, Default: `1.0`   
 * `Number3`, Type: `Float`, Default: `1.0`   
@@ -89,7 +95,8 @@ __Permissions:__ `link.basic`, `link.gate.divide`
 # Equal  
 __Appearance on Sign:__ `[==]`  
 __Creation Aliases:__ `[==]`, `[equal]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Number1`, Type: `Float`, Default: `0.0`   
 * `Number2`, Type: `Float`, Default: `0.0`  
 
@@ -105,7 +112,8 @@ __Permissions:__ `link.basic`, `link.gate.gps`
 # Greater  
 __Appearance on Sign:__ `[>]`  
 __Creation Aliases:__ `[>]`, `[greater]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Number1`, Type: `Float`, Default: `0.0`   
 * `Number2`, Type: `Float`, Default: `0.0`  
 
@@ -115,7 +123,8 @@ __Permissions:__ `link.basic`, `link.gate.>`
 # Greater Than or Equals To  
 __Appearance on Sign:__ `[>=]`  
 __Creation Aliases:__ `[>=]`, `[greatequal]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Number1`, Type: `Float`, Default: `0.0`   
 * `Number2`, Type: `Float`, Default: `0.0`  
 
@@ -125,7 +134,8 @@ __Permissions:__ `link.basic`, `link.gate.>=`
 # Less  
 __Appearance on Sign:__ `[<]`  
 __Creation Aliases:__ `[<]`, `[less]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Number1`, Type: `Float`, Default: `0.0`   
 * `Number2`, Type: `Float`, Default: `0.0`  
 
@@ -135,7 +145,8 @@ __Permissions:__ `link.basic`, `link.gate.<`
 # Less Than or Equals To  
 __Appearance on Sign:__ `[<=]`  
 __Creation Aliases:__ `[<=]`, `[lessequal]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Number1`, Type: `Float`, Default: `0.0`   
 * `Number2`, Type: `Float`, Default: `0.0`  
 
@@ -146,7 +157,8 @@ __Permissions:__ `link.basic`, `link.gate.<=`
 __Description:__ Makes a position out of three float values. (X, Y, Z)  
 __Appearance on Sign:__ `[MakePos]`  
 __Creation Aliases:__ `[makepos]`, `[mpos]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `X`, Type: `Float`, Default: `0.0`   
 * `Y`, Type: `Float`, Default: `0.0`   
 * `Z`, Type: `Float`, Default: `0.0`  
@@ -157,7 +169,8 @@ __Permissions:__ `link.basic`, `link.gate.makepos`
 # Minus Fixnum  
 __Appearance on Sign:__ `[MinusFixnum]`  
 __Creation Aliases:__ `[-]`, `[minus]`, `[minusfixnum]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Number1`, Type: `Float`, Default: `0.0`   
 * `Number2`, Type: `Float`, Default: `0.0`   
 * `Number3`, Type: `Float`, Default: `0.0`   
@@ -169,7 +182,8 @@ __Permissions:__ `link.basic`, `link.gate.minusfixnum`
 # Multiply Fixnum  
 __Appearance on Sign:__ `[Multiply]`  
 __Creation Aliases:__ `[*]`, `[multiply]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Number1`, Type: `Float`, Default: `1.0`   
 * `Number2`, Type: `Float`, Default: `1.0`   
 * `Number3`, Type: `Float`, Default: `1.0`   
@@ -181,7 +195,8 @@ __Permissions:__ `link.basic`, `link.gate.multiply`
 # Not Equal  
 __Appearance on Sign:__ `[!=]`  
 __Creation Aliases:__ `[!=]`, `[notequal]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Number1`, Type: `Float`, Default: `0.0`   
 * `Number2`, Type: `Float`, Default: `0.0`  
 
@@ -199,7 +214,8 @@ __Permissions:__ `link.basic`, `link.gate.playerpos`
 # Player Sensor  
 __Appearance on Sign:__ `[PlayrSensor]`  
 __Creation Aliases:__ `[playersensor]`, `[psensor]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Update`, Type: `Float`, Default: `0.0`   
 * `Radius`, Type: `Float`, Default: `10.0`  
 
@@ -223,7 +239,8 @@ __Permissions:__ `link.basic`, `link.gate.redstoneout`
 __Description:__ Delays a float signal for a specified number of ingame ticks.  
 __Appearance on Sign:__ `[Delay]`  
 __Creation Aliases:__ `[delay]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Value`, Type: `Float`, Default: `0.0`   
 * `Delay`, Type: `Float`, Default: `10.0`  
 
@@ -243,7 +260,8 @@ __Permissions:__ `link.basic`, `link.gate.splitpos`
 __Description:__ Displays one float and one string.  
 __Appearance on Sign:__ `[Display]`  
 __Creation Aliases:__ `[d]`, `[display]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Value`, Type: `String`, Default: `<empty string>`   
 * `Value2`, Type: `Float`, Default: `0.0`  
 
@@ -251,7 +269,8 @@ __Permissions:__ `link.basic`, `link.gate.display`
 # Teleport Player  
 __Appearance on Sign:__ `[Teleport]`  
 __Creation Aliases:__ `[teleport]`, `[tp]`  
-__Inputs:__  
+__Inputs:__ 
+ 
 * `Player`, Type: `String`, Default: `<empty string>`   
 * `Position`, Type: `Position`, Default: `[0.0,0.0,2.0]`   
 * `Teleport`, Type: `Float`, Default: `0.0`  

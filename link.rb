@@ -120,7 +120,7 @@ class Link < RubyPlugin
 				end
 			end
 			info+= "__Creation Aliases:__ `#{alia.sort.join("`, `")}`  \n"
-			input = ""
+			input = gate.inputs.length>1?"\n":""
 			gate.inputs.each do |k,v|
 				defa = v.to_s
 				if defa==""
@@ -131,7 +131,7 @@ class Link < RubyPlugin
 			if input!=""
 				info+= "__Inputs:__ "+input+"\n\n"
 			end
-			output = ""
+			output = gate.outputs.length>1?"\n":""
 			gate.outputs.each do |k,v|
 				defa = v[0].to_s
 				if defa==""
