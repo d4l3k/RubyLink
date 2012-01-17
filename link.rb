@@ -99,11 +99,14 @@ class Link < RubyPlugin
 		world = player.getWorld()
 		debug "World: #{world.getName}"
 		block = world.getBlockAt(0,0,2)
+		type = block.getType
+		block.setType(Material::SIGN_POST)
 		debug "Player: #{player.getName}"
 		event = SignChangeEvent.new(block, player, ["","","",""])
 		@gate_ref.values.uniq.each do |gatec|
 			debug "Proccessing: #{gatec.to_s}"
-			gate = gatec.new event
+			gate = gatec.new
+			gate.init event
 			info = "# "+gate.name+"\n"
 			desc = @gate_desc[gatec]
 			if desc!=nil
@@ -131,10 +134,11 @@ class Link < RubyPlugin
 			if output!=""
 				info+= "__Outputs:__\n\n"+output+"\n"
 			end
-			info+= "__Permissions:__ `#{gate.perms}`\n\n"
+			info+= "__Permissions:__ `#{"link."+gate.perms}`, `#{"link.gate."+gate.id.delete("[]").downcase}`\n\n"
 			debug info
 			gates.push info
 		end
+		block.setType(type)
 		final = "Case does not matter for gate creation.\n\n"
 		final += gates.sort.join "\n\n"
 		gate_file = File.join(File.dirname(__FILE__),"./link_documentation.markdown")
@@ -171,15 +175,22 @@ class Link < RubyPlugin
 		$gates=[]
 		load_types
 		load_gates
-		registerEvent(Event::Type::SIGN_CHANGE, Event::Priority::Monitor) do |event|
+		registerEvent(Event::Type::SIGN_CHANGE, Event::Priority::Normal) do |event|
 			type = event.getLine(0).strip.downcase
 			gate_class = @gate_ref[type]
 			if gate_class!=nil
-				$gates.push gate_class.new event
-				save_gates
+				gate = gate_class.new
+				blah = gate.init event
+				if !(blah==false)
+					$gates.push gate
+					save_gates
+				end
 			end
 		end
 		registerEvent(Event::Type::BLOCK_BREAK, Event::Priority::Monitor) do |event|
+			if event.isCancelled
+				return
+			end
 			block = event.getBlock
 			mat = block.getType
 			if (mat==Material::WALL_SIGN||mat==Material::SIGN_POST)
@@ -334,12 +345,12 @@ class Link < RubyPlugin
 	end
 	def onCommand sender, cmd, label, args
 		player = sender.getPlayer
-		if args.length>0
+		if args.length>0&&player.hasPermission("link.dev.generate")
 			if args[0] == "generate"
 				generate_docs(player)
 				return true
 			end
-		else
+		elsif player.hasPermission("link.edit")
 			if @player_status[player]==nil
 				@player_status.store player, [false, 0]
 			end

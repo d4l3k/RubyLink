@@ -1,16 +1,22 @@
 class Gate
 	attr_accessor :name,:id,:perm,:block,:inputs,:outputs,:perms
-	def initialize event
+	def init event
 		@name = "BaseGate"
 		@id = "[BaseGate]"
-		@perms = "link.basic"
+		@perms = "basic"
 		@block = LinkBlock.new(event.block)
 		@inputs = {}
 		@outputs = {}
 		setup event
-		resume
-		event.getPlayer.sendMessage("[LINK] "+ChatColor::GREEN.toString+"Creation Sucessful! "+name)
-		event.setLine(0, ChatColor::AQUA.toString + @id)
+		player = event.getPlayer
+		if player.hasPermission("link."+@perms)||player.hasPermission("link.gate."+@id.delete("[]").downcase)
+			resume
+			event.getPlayer.sendMessage("[LINK] "+ChatColor::GREEN.toString+"Creation Sucessful! "+name)
+			event.setLine(0, ChatColor::AQUA.toString + @id)
+		else
+			event.getPlayer.sendMessage("[LINK] "+ChatColor::RED.toString+"Invalid Permissions for gate: "+name)
+			return false
+		end
 	end
 	def add_input name, default
 		@inputs.store name, default

@@ -21,7 +21,7 @@ __Outputs:__
 * `Product`, Type: `Float`, Default: `0.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.addfixnum`
 
 
 
@@ -48,7 +48,7 @@ __Outputs:__
 * `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.addpos`
 
 
 
@@ -69,7 +69,7 @@ __Outputs:__
 * `True`, Type: `Float`, Default: `0.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.all`
 
 
 
@@ -94,7 +94,7 @@ __Outputs:__
 * `True`, Type: `Float`, Default: `0.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.any`
 
 
 
@@ -122,7 +122,7 @@ __Inputs:__
 * `Spread`, Type: `Float`, Default: `6.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.turret`
 
 
 
@@ -138,7 +138,7 @@ __Outputs:__
 * `Value`, Type: `Float`, Default: `0.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.button`
 
 
 
@@ -154,7 +154,7 @@ __Outputs:__
 * `Value`, Type: `Float`, Default: `1.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.constant`
 
 
 
@@ -179,7 +179,7 @@ __Outputs:__
 * `Product`, Type: `Float`, Default: `1.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.divide`
 
 
 
@@ -200,7 +200,7 @@ __Outputs:__
 * `True`, Type: `Float`, Default: `1.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.==`
 
 
 
@@ -211,10 +211,10 @@ __Creation Aliases:__ `[gps]`, `[location]`
 
 __Outputs:__
 
-* `Position`, Type: `Position`, Default: `[0.0,0.0,2.0]`
+* `Position`, Type: `Position`, Default: `[0.5,0.5,2.5]`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.gps`
 
 
 
@@ -235,7 +235,7 @@ __Outputs:__
 * `True`, Type: `Float`, Default: `0.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.>`
 
 
 
@@ -256,7 +256,7 @@ __Outputs:__
 * `True`, Type: `Float`, Default: `1.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.>=`
 
 
 
@@ -277,7 +277,7 @@ __Outputs:__
 * `True`, Type: `Float`, Default: `0.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.<`
 
 
 
@@ -298,7 +298,7 @@ __Outputs:__
 * `True`, Type: `Float`, Default: `1.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.<=`
 
 
 
@@ -323,7 +323,7 @@ __Outputs:__
 * `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.makepos`
 
 
 
@@ -348,7 +348,7 @@ __Outputs:__
 * `Product`, Type: `Float`, Default: `0.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.minusfixnum`
 
 
 
@@ -373,7 +373,7 @@ __Outputs:__
 * `Product`, Type: `Float`, Default: `1.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.multiply`
 
 
 
@@ -394,7 +394,7 @@ __Outputs:__
 * `True`, Type: `Float`, Default: `1.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.!=`
 
 
 
@@ -405,7 +405,7 @@ __Creation Aliases:__ `[playerpos]`, `[ppos]`
 
 __Inputs:__
 
-* `Player`, Type: `String`, Default: `X: 0.0`
+* `Player`, Type: `String`, Default: `X: 0.5`
 
 
 __Outputs:__
@@ -413,7 +413,7 @@ __Outputs:__
 * `Position`, Type: `Position`, Default: `[0.0,0.0,2.0]`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.playerpos`
 
 
 
@@ -434,7 +434,7 @@ __Outputs:__
 * `Player`, Type: `String`, Default: ``
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.playrsensor`
 
 
 
@@ -448,7 +448,7 @@ __Outputs:__
 * `Power`, Type: `Float`, Default: `0.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.redstonein`
 
 
 
@@ -471,7 +471,7 @@ __Outputs:__
 * `Value`, Type: `Float`, Default: `0.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.delay`
 
 
 
@@ -490,7 +490,7 @@ __Outputs:__
 * `Z`, Type: `Float`, Default: `0.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.splitpos`
 
 
 
@@ -508,7 +508,7 @@ __Inputs:__
 * `Value2`, Type: `Float`, Default: `0.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.display`
 
 
 
@@ -526,7 +526,7 @@ __Inputs:__
 * `Teleport`, Type: `Float`, Default: `0.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.teleport`
 
 
 
@@ -540,5 +540,5 @@ __Outputs:__
 * `Value`, Type: `Float`, Default: `0.0`
 
 
-__Permissions:__ `link.basic`
+__Permissions:__ `link.basic`, `link.gate.togglenum`
 
