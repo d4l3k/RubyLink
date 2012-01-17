@@ -124,23 +124,23 @@ class Link < RubyPlugin
 			gate.inputs.each do |k,v|
 				defa = v.to_s
 				if defa==""
-					defa="<Empty String>"
+					defa="<empty string>"
 				end
-				input += "* `#{k}`, Type: `#{v.class.to_s}`, Default: `#{defa}`  \n"
+				input += ((gate.inputs.length>1) ? " \n* " : "") + "`#{k}`, Type: `#{v.class.to_s}`, Default: `#{defa}`  "
 			end
 			if input!=""
-				info+= "__Inputs:__  \n"+input+""
+				info+= "__Inputs:__ "+input+"\n\n"
 			end
 			output = ""
 			gate.outputs.each do |k,v|
 				defa = v[0].to_s
 				if defa==""
-					defa="<Empty String>"
+					defa="<empty string>"
 				end
-				output = "* `#{k}`, Type: `#{v[0].class.to_s}`, Default: `#{defa}`  \n"
+				output = ((gate.outputs.length>1)? " \n* ":"")+"`#{k}`, Type: `#{v[0].class.to_s}`, Default: `#{defa}`  "
 			end
 			if output!=""
-				info+= "__Outputs:__  \n"+output+""
+				info+= "__Outputs:__ "+output+"\n\n"
 			end
 			info+= "__Permissions:__ `#{"link."+gate.perms}`, `#{"link.gate."+gate.id.delete("[]").downcase}`  \n"
 			debug info
