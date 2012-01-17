@@ -10,7 +10,6 @@ __Inputs:__
 * `Number4`, Type: `Float`, Default: `0.0`  
 
 __Output:__ `Product`, Type: `Float`, Default: `0.0`  
-
 __Permissions:__ `link.basic`, `link.gate.addfixnum`  
 # Add to Position  
 __Description:__ Adds float values to a position.  
@@ -24,7 +23,6 @@ __Inputs:__
 * `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`  
 
 __Output:__ `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`  
-
 __Permissions:__ `link.basic`, `link.gate.addpos`  
 # All >= 1.0  
 __Appearance on Sign:__ `[All]`  
@@ -35,7 +33,6 @@ __Inputs:__
 * `Number2`, Type: `Float`, Default: `0.0`  
 
 __Output:__ `True`, Type: `Float`, Default: `0.0`  
-
 __Permissions:__ `link.basic`, `link.gate.all`  
 # Any  
 __Appearance on Sign:__ `[Any]`  
@@ -48,7 +45,6 @@ __Inputs:__
 * `Number4`, Type: `Float`, Default: `0.0`  
 
 __Output:__ `True`, Type: `Float`, Default: `0.0`  
-
 __Permissions:__ `link.basic`, `link.gate.any`  
 # Arrow Turret  
 __Description:__ Fires arrows at a position.  
@@ -70,14 +66,12 @@ __Description:__ Goes to the high value then the low value. Can use sign argumen
 __Appearance on Sign:__ `[Button]`  
 __Creation Aliases:__ `[b]`, `[but]`, `[button]`  
 __Output:__ `Value`, Type: `Float`, Default: `0.0`  
-
 __Permissions:__ `link.basic`, `link.gate.button`  
 # Constant Value  
 __Description:__ Outputs a constant that is set on the 2nd line. Can be a float or a string.  
 __Appearance on Sign:__ `[Constant]`  
 __Creation Aliases:__ `[c]`, `[constant]`, `[value]`  
 __Output:__ `Value`, Type: `Float`, Default: `1.0`  
-
 __Permissions:__ `link.basic`, `link.gate.constant`  
 # Divide Fixnum  
 __Appearance on Sign:__ `[Divide]`  
@@ -90,7 +84,6 @@ __Inputs:__
 * `Number4`, Type: `Float`, Default: `1.0`  
 
 __Output:__ `Product`, Type: `Float`, Default: `1.0`  
-
 __Permissions:__ `link.basic`, `link.gate.divide`  
 # Equal  
 __Appearance on Sign:__ `[==]`  
@@ -101,13 +94,11 @@ __Inputs:__
 * `Number2`, Type: `Float`, Default: `0.0`  
 
 __Output:__ `True`, Type: `Float`, Default: `1.0`  
-
 __Permissions:__ `link.basic`, `link.gate.==`  
 # GPS  
 __Appearance on Sign:__ `[GPS]`  
 __Creation Aliases:__ `[gps]`, `[location]`  
 __Output:__ `Position`, Type: `Position`, Default: `[0.5,0.5,2.5]`  
-
 __Permissions:__ `link.basic`, `link.gate.gps`  
 # Greater  
 __Appearance on Sign:__ `[>]`  
@@ -118,7 +109,6 @@ __Inputs:__
 * `Number2`, Type: `Float`, Default: `0.0`  
 
 __Output:__ `True`, Type: `Float`, Default: `0.0`  
-
 __Permissions:__ `link.basic`, `link.gate.>`  
 # Greater Than or Equals To  
 __Appearance on Sign:__ `[>=]`  
@@ -129,7 +119,6 @@ __Inputs:__
 * `Number2`, Type: `Float`, Default: `0.0`  
 
 __Output:__ `True`, Type: `Float`, Default: `1.0`  
-
 __Permissions:__ `link.basic`, `link.gate.>=`  
 # Less  
 __Appearance on Sign:__ `[<]`  
@@ -140,7 +129,6 @@ __Inputs:__
 * `Number2`, Type: `Float`, Default: `0.0`  
 
 __Output:__ `True`, Type: `Float`, Default: `0.0`  
-
 __Permissions:__ `link.basic`, `link.gate.<`  
 # Less Than or Equals To  
 __Appearance on Sign:__ `[<=]`  
@@ -151,7 +139,6 @@ __Inputs:__
 * `Number2`, Type: `Float`, Default: `0.0`  
 
 __Output:__ `True`, Type: `Float`, Default: `1.0`  
-
 __Permissions:__ `link.basic`, `link.gate.<=`  
 # Make Position  
 __Description:__ Makes a position out of three float values. (X, Y, Z)  
@@ -164,7 +151,6 @@ __Inputs:__
 * `Z`, Type: `Float`, Default: `0.0`  
 
 __Output:__ `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`  
-
 __Permissions:__ `link.basic`, `link.gate.makepos`  
 # Minus Fixnum  
 __Appearance on Sign:__ `[MinusFixnum]`  
@@ -177,7 +163,6 @@ __Inputs:__
 * `Number4`, Type: `Float`, Default: `0.0`  
 
 __Output:__ `Product`, Type: `Float`, Default: `0.0`  
-
 __Permissions:__ `link.basic`, `link.gate.minusfixnum`  
 # Multiply Fixnum  
 __Appearance on Sign:__ `[Multiply]`  
@@ -190,7 +175,6 @@ __Inputs:__
 * `Number4`, Type: `Float`, Default: `1.0`  
 
 __Output:__ `Product`, Type: `Float`, Default: `1.0`  
-
 __Permissions:__ `link.basic`, `link.gate.multiply`  
 # Not Equal  
 __Appearance on Sign:__ `[!=]`  
@@ -201,15 +185,12 @@ __Inputs:__
 * `Number2`, Type: `Float`, Default: `0.0`  
 
 __Output:__ `True`, Type: `Float`, Default: `1.0`  
-
 __Permissions:__ `link.basic`, `link.gate.!=`  
 # Player Position  
 __Appearance on Sign:__ `[PlayerPos]`  
 __Creation Aliases:__ `[playerpos]`, `[ppos]`  
 __Input:__ `Player`, Type: `String`, Default: `X: 0.5`  
-
 __Output:__ `Position`, Type: `Position`, Default: `[0.0,0.0,2.0]`  
-
 __Permissions:__ `link.basic`, `link.gate.playerpos`  
 # Player Sensor  
 __Appearance on Sign:__ `[PlayrSensor]`  
@@ -220,20 +201,17 @@ __Inputs:__
 * `Radius`, Type: `Float`, Default: `10.0`  
 
 __Output:__ `Player`, Type: `String`, Default: `<empty string>`  
-
 __Permissions:__ `link.basic`, `link.gate.playrsensor`  
 # Redstone Power Input  
 __Appearance on Sign:__ `[RedstoneIn]`  
 __Creation Aliases:__ `[redstonein]`, `[rin]`  
 __Output:__ `Power`, Type: `Float`, Default: `0.0`  
-
 __Permissions:__ `link.basic`, `link.gate.redstonein`  
 # Redstone Power Output  
 __Description:__ Outputs redstone power from an input. Powered if Power>=1.0. Requires Spout!  
 __Appearance on Sign:__ `[RedstoneOut]`  
 __Creation Aliases:__ `[redstoneout]`, `[rout]`  
 __Input:__ `Power`, Type: `Float`, Default: `0.0`  
-
 __Permissions:__ `link.basic`, `link.gate.redstoneout`  
 # Signal Delay  
 __Description:__ Delays a float signal for a specified number of ingame ticks.  
@@ -245,13 +223,11 @@ __Inputs:__
 * `Delay`, Type: `Float`, Default: `10.0`  
 
 __Output:__ `Value`, Type: `Float`, Default: `0.0`  
-
 __Permissions:__ `link.basic`, `link.gate.delay`  
 # Split Position  
 __Appearance on Sign:__ `[SplitPos]`  
 __Creation Aliases:__ `[splitpos]`, `[spos]`  
 __Input:__ `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`  
-
 __Outputs:__ 
  
 * `X`, Type: `Float`, Default: `0.0`   
@@ -283,5 +259,4 @@ __Permissions:__ `link.basic`, `link.gate.teleport`
 __Appearance on Sign:__ `[ToggleNum]`  
 __Creation Aliases:__ `[tog]`, `[toggle]`, `[togglenum]`  
 __Output:__ `Value`, Type: `Float`, Default: `0.0`  
-
 __Permissions:__ `link.basic`, `link.gate.togglenum`  

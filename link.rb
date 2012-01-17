@@ -129,7 +129,7 @@ class Link < RubyPlugin
 				input += ((gate.inputs.length>1) ? " \n* " : "") + "`#{k}`, Type: `#{v.class.to_s}`, Default: `#{defa}`  "
 			end
 			if input!=""
-				info+= "__#{gate.inputs.length>1?"Inputs":"Input"}:__ "+input+"\n\n"
+				info+= "__#{gate.inputs.length>1?"Inputs":"Input"}:__ "+input+"#{gate.inputs.length>1?"\n":""}\n"
 			end
 			output = gate.outputs.length>1?"\n":""
 			gate.outputs.each do |k,v|
@@ -140,7 +140,7 @@ class Link < RubyPlugin
 				output += ((gate.outputs.length>1)? " \n* ":"")+"`#{k}`, Type: `#{v[0].class.to_s}`, Default: `#{defa}`  "
 			end
 			if output!=""
-				info+= "__#{gate.outputs.length>1?"Outputs":"Output"}:__ "+output+"\n\n"
+				info+= "__#{gate.outputs.length>1?"Outputs":"Output"}:__ "+output+"#{gate.outputs.length>1?"\n":""}\n"
 			end
 			info+= "__Permissions:__ `#{"link."+gate.perms}`, `#{"link.gate."+gate.id.delete("[]").downcase}`  \n"
 			debug info
