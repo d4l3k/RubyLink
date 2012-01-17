@@ -7,14 +7,18 @@ class Gate
 		@block = LinkBlock.new(event.block)
 		@inputs = {}
 		@outputs = {}
-		setup event
 		player = event.getPlayer
+		c = setup event
+		if c == false
+			player.sendMessage("[LINK] "+ChatColor::RED.toString+"Gate has unmet requisites. Check wiki. "+@name)
+			return false
+		end
 		if player.hasPermission("link."+@perms)||player.hasPermission("link.gate."+@id.delete("[]").downcase)
 			resume
-			event.getPlayer.sendMessage("[LINK] "+ChatColor::GREEN.toString+"Creation Sucessful! "+name)
+			player.sendMessage("[LINK] "+ChatColor::GREEN.toString+"Creation Sucessful! "+@name)
 			event.setLine(0, ChatColor::AQUA.toString + @id)
 		else
-			event.getPlayer.sendMessage("[LINK] "+ChatColor::RED.toString+"Invalid Permissions for gate: "+name)
+			player.sendMessage("[LINK] "+ChatColor::RED.toString+"Invalid Permissions for gate: "+@name)
 			return false
 		end
 	end

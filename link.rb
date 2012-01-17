@@ -107,40 +107,48 @@ class Link < RubyPlugin
 			debug "Proccessing: #{gatec.to_s}"
 			gate = gatec.new
 			gate.init event
-			info = "# "+gate.name+"\n"
+			info = "# "+gate.name+"  \n"
 			desc = @gate_desc[gatec]
 			if desc!=nil
-				info+="__Description:__ #{desc}\n\n"
+				info+="__Description:__ #{desc}  \n"
 			end
-			info+= "__Appearance on Sign:__ `#{gate.id}`\n\n"
+			info+= "__Appearance on Sign:__ `#{gate.id}`  \n"
 			alia = []
 			@gate_ref.each do |k, v|
 				if v == gatec
 					alia.push k
 				end
 			end
-			info+= "__Creation Aliases:__ `#{alia.sort.join("`, `")}`\n\n"
+			info+= "__Creation Aliases:__ `#{alia.sort.join("`, `")}`  \n"
 			input = ""
 			gate.inputs.each do |k,v|
-				input += "* `#{k}`, Type: `#{v.class.to_s}`, Default: `#{v.to_s}`\n\n"
+				defa = v.to_s
+				if defa==""
+					defa="<Empty String>"
+				end
+				input += "* `#{k}`, Type: `#{v.class.to_s}`, Default: `#{defa}`  \n"
 			end
 			if input!=""
-				info+= "__Inputs:__\n\n"+input+"\n"
+				info+= "__Inputs:__  \n"+input+""
 			end
 			output = ""
 			gate.outputs.each do |k,v|
-				output = "* `#{k}`, Type: `#{v[0].class.to_s}`, Default: `#{v[0].to_s}`\n\n"
+				defa = v[0].to_s
+				if defa==""
+					defa="<Empty String>"
+				end
+				output = "* `#{k}`, Type: `#{v[0].class.to_s}`, Default: `#{defa}`  \n"
 			end
 			if output!=""
-				info+= "__Outputs:__\n\n"+output+"\n"
+				info+= "__Outputs:__  \n"+output+""
 			end
-			info+= "__Permissions:__ `#{"link."+gate.perms}`, `#{"link.gate."+gate.id.delete("[]").downcase}`\n\n"
+			info+= "__Permissions:__ `#{"link."+gate.perms}`, `#{"link.gate."+gate.id.delete("[]").downcase}`  \n"
 			debug info
 			gates.push info
 		end
 		block.setType(type)
-		final = "Case does not matter for gate creation.\n\n"
-		final += gates.sort.join "\n\n"
+		final = "Case does not matter for gate creation.  \n"
+		final += gates.sort.join
 		gate_file = File.join(File.dirname(__FILE__),"./link_documentation.markdown")
 		File.open(gate_file, "w") do |file|
 			file.print final
