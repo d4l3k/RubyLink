@@ -112,14 +112,14 @@ class Link < RubyPlugin
 			if desc!=nil
 				info+="__Description:__ #{desc}  \n"
 			end
-			info+= "__Appearance on Sign:__ `#{gate.id}`  \n"
+			info+= "__ID (Title on sign):__ `#{gate.id}`  \n"
 			alia = []
 			@gate_ref.each do |k, v|
 				if v == gatec
 					alia.push k
 				end
 			end
-			info+= "__Creation Aliases:__ `#{alia.sort.join("`, `")}`  \n"
+			info+= "__Creation aliases:__ `#{alia.sort.join("`, `")}`  \n"
 			input = gate.inputs.length>1?"\n":""
 			gate.inputs.each do |k,v|
 				defa = v.to_s

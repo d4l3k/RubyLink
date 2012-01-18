@@ -25,25 +25,6 @@ class RedstoneOut < Gate
 		blk.setBlockPowered pow
 		craft = blk.getWorld.to_java('org.bukkit.craftbukkit.CraftWorld').getHandle.to_java('net.minecraft.server.World')
 		craft.applyPhysics(blk.getX, blk.getY, blk.getZ, blk.getTypeId)
-		#x = blk.getX-1
-		#y = blk.getY-1
-		#z = blk.getZ-1
-		#3.times do
-		#	3.times do
-		#		3.times do
-		#			blk2 = world.getBlockAt(x,y,z)
-		#			mat = blk2.getType
-		#			if mat == Material::REDSTONE_WIRE
-		#				mat.setData(0xF)
-		#				blk2.setType mat
-		#			end
-		#			z+=1
-		#		end
-		#		y++1
-		#	end
-		#	x+=1
-		#end
-			
 	end
 	def update_display
 	end

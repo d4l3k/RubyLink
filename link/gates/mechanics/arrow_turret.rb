@@ -2,6 +2,7 @@ class FireArrow < Gate
 	def setup event
 		@name = "Arrow Turret"
 		@id = "[Turret]"
+		@perms = "danger"
 		add_input "Target", @block.get_pos
 		add_input "Launch", 0.0
 		add_input "Speed", 1.2

@@ -2,6 +2,7 @@ class TeleportPlayer < Gate
 	def setup event
 		@name = "Teleport Player"
 		@id = "[Teleport]"
+		@perms = "danger"
 		add_input "Player", ""
 		add_input "Position", @block.get_pos
 		add_input "Teleport", 0.0
