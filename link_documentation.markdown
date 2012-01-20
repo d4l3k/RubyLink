@@ -1,16 +1,4 @@
 Case does not matter for gate creation.  
-# Add Float  
-__ID (Title on sign):__ `[AddFloat]`  
-__Creation Aliases:__ `[+]`, `[add]`, `[addfloat]`  
-__Inputs:__ 
- 
-* `Number1`, Type: `Float`, Default: `0.0`   
-* `Number2`, Type: `Float`, Default: `0.0`   
-* `Number3`, Type: `Float`, Default: `0.0`   
-* `Number4`, Type: `Float`, Default: `0.0`  
-
-__Output:__ `Product`, Type: `Float`, Default: `0.0`  
-__Permissions:__ `link.basic`, `link.gate.addfloat`  
 # Add to Position  
 __Description:__ Adds float values to a position.  
 __ID (Title on sign):__ `[AddPos]`  
@@ -82,18 +70,6 @@ __ID (Title on sign):__ `[Constant]`
 __Creation Aliases:__ `[c]`, `[constant]`, `[value]`  
 __Output:__ `Value`, Type: `Float`, Default: `1.0`  
 __Permissions:__ `link.basic`, `link.gate.constant`  
-# Divide Float  
-__ID (Title on sign):__ `[Divide]`  
-__Creation Aliases:__ `[/]`, `[divide]`  
-__Inputs:__ 
- 
-* `Number1`, Type: `Float`, Default: `1.0`   
-* `Number2`, Type: `Float`, Default: `1.0`   
-* `Number3`, Type: `Float`, Default: `1.0`   
-* `Number4`, Type: `Float`, Default: `1.0`  
-
-__Output:__ `Product`, Type: `Float`, Default: `1.0`  
-__Permissions:__ `link.basic`, `link.gate.divide`  
 # Equal  
 __ID (Title on sign):__ `[==]`  
 __Creation Aliases:__ `[==]`, `[equal]`  
@@ -104,6 +80,214 @@ __Inputs:__
 
 __Output:__ `True`, Type: `Float`, Default: `1.0`  
 __Permissions:__ `link.basic`, `link.gate.==`  
+# Float: Absolute  
+__Description:__ Returns the absolute value of A.  
+__ID (Title on sign):__ `[F.Absolute]`  
+__Creation Aliases:__ `[f.absolute]`  
+__Input:__ `A`, Type: `Float`, Default: `0.0`  
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.absolute`  
+# Float: Add  
+__Description:__ Returns the sum of A-H.  
+__ID (Title on sign):__ `[F.Add]`  
+__Creation Aliases:__ `[f.add]`  
+__Inputs:__ 
+ 
+* `A`, Type: `Float`, Default: `0.0`   
+* `B`, Type: `Float`, Default: `0.0`   
+* `C`, Type: `Float`, Default: `0.0`   
+* `D`, Type: `Float`, Default: `0.0`   
+* `E`, Type: `Float`, Default: `0.0`   
+* `F`, Type: `Float`, Default: `0.0`   
+* `G`, Type: `Float`, Default: `0.0`   
+* `H`, Type: `Float`, Default: `0.0`  
+
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.add`  
+# Float: And / Add  
+__Description:__ Returns the sum of `A` & `B` when they are not equal to `0.0`.  
+__ID (Title on sign):__ `[F.And/Add]`  
+__Creation Aliases:__ `[f.and/add]`  
+__Inputs:__ 
+ 
+* `A`, Type: `Float`, Default: `0.0`   
+* `B`, Type: `Float`, Default: `0.0`  
+
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.and/add`  
+# Float: Ceiling  
+__Description:__ Rounds A to the nearest integer upwards.  
+__ID (Title on sign):__ `[F.Ceiling]`  
+__Creation Aliases:__ `[f.ceil]`, `[f.ceiling]`  
+__Input:__ `A`, Type: `Float`, Default: `0.0`  
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.ceiling`  
+# Float: Delta  
+__Description:__ Returns the change between a new value of A and the old one.  
+__ID (Title on sign):__ `[F.Delta]`  
+__Creation Aliases:__ `[f.delta]`  
+__Input:__ `A`, Type: `Float`, Default: `0.0`  
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.delta`  
+# Float: Delta (Rectified)  
+__Description:__ Returns the change between a new value of A and the old one. Modulo is applied to the output to prevent it from giving values outside the -180 to 180 range.  
+__ID (Title on sign):__ `[F.DeltaR]`  
+__Creation Aliases:__ `[f.deltar]`  
+__Input:__ `A`, Type: `Float`, Default: `0.0`  
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.deltar`  
+# Float: Divide  
+__Description:__ Divides A by B-H.  
+__ID (Title on sign):__ `[F.Divide]`  
+__Creation Aliases:__ `[f.divide]`  
+__Inputs:__ 
+ 
+* `A`, Type: `Float`, Default: `1.0`   
+* `B`, Type: `Float`, Default: `1.0`   
+* `C`, Type: `Float`, Default: `1.0`   
+* `D`, Type: `Float`, Default: `1.0`   
+* `E`, Type: `Float`, Default: `1.0`   
+* `F`, Type: `Float`, Default: `1.0`   
+* `G`, Type: `Float`, Default: `1.0`   
+* `H`, Type: `Float`, Default: `1.0`  
+
+__Output:__ `Out`, Type: `Float`, Default: `1.0`  
+__Permissions:__ `link.basic`, `link.gate.f.divide`  
+# Float: Exponential Powers  
+__Description:__ Raises `A` to the `b` power.  
+__ID (Title on sign):__ `[F.Power]`  
+__Creation Aliases:__ `[f.power]`  
+__Inputs:__ 
+ 
+* `A`, Type: `Float`, Default: `0.0`   
+* `B`, Type: `Float`, Default: `1.0`  
+
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.power`  
+# Float: Increment/Decrement  
+__Description:__ Adds `A` to `Out` when `Increment` is greater than `0.0`, subtracts when `Decrement` is greater than `0.0`  
+__ID (Title on sign):__ `[F.Increment]`  
+__Creation Aliases:__ `[f.increment]`  
+__Inputs:__ 
+ 
+* `A`, Type: `Float`, Default: `0.0`   
+* `Increment`, Type: `Float`, Default: `0.0`   
+* `Decrement`, Type: `Float`, Default: `0.0`   
+* `Reset`, Type: `Float`, Default: `0.0`  
+
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.increment`  
+# Float: Inverse  
+__Description:__ Returns `1.0/A`.  
+__ID (Title on sign):__ `[F.Inverse]`  
+__Creation Aliases:__ `[f.floor]`  
+__Input:__ `A`, Type: `Float`, Default: `0.0`  
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.inverse`  
+# Float: Log  
+__Description:__ Returns the logarithm of `A` with base e.  
+__ID (Title on sign):__ `[F.Log]`  
+__Creation Aliases:__ `[f.log]`  
+__Input:__ `A`, Type: `Float`, Default: `0.0`  
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.log`  
+# Float: Log 10  
+__Description:__ Returns the logarithm of `A` with base 10.  
+__ID (Title on sign):__ `[F.Log10]`  
+__Creation Aliases:__ `[f.log10]`  
+__Input:__ `A`, Type: `Float`, Default: `0.0`  
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.log10`  
+# Float: Modulo  
+__Description:__ Returns the remainder of `A` divided by `B`.  
+__ID (Title on sign):__ `[F.Modulo]`  
+__Creation Aliases:__ `[f.modulo]`  
+__Inputs:__ 
+ 
+* `A`, Type: `Float`, Default: `0.0`   
+* `B`, Type: `Float`, Default: `0.0`  
+
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.modulo`  
+# Float: Multiply  
+__Description:__ Multiplies A-H together.  
+__ID (Title on sign):__ `[F.Multiply]`  
+__Creation Aliases:__ `[f.multiply]`  
+__Inputs:__ 
+ 
+* `A`, Type: `Float`, Default: `1.0`   
+* `B`, Type: `Float`, Default: `1.0`   
+* `C`, Type: `Float`, Default: `1.0`   
+* `D`, Type: `Float`, Default: `1.0`   
+* `E`, Type: `Float`, Default: `1.0`   
+* `F`, Type: `Float`, Default: `1.0`   
+* `G`, Type: `Float`, Default: `1.0`   
+* `H`, Type: `Float`, Default: `1.0`  
+
+__Output:__ `Out`, Type: `Float`, Default: `1.0`  
+__Permissions:__ `link.basic`, `link.gate.f.multiply`  
+# Float: Negate  
+__Description:__ Returns the negated version of `A`. Ex: `1 <=> -1`.  
+__ID (Title on sign):__ `[F.Negate]`  
+__Creation Aliases:__ `[f.negate]`  
+__Input:__ `A`, Type: `Float`, Default: `0.0`  
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.negate`  
+# Float: Percent  
+__Description:__ Returns `A` divided by `Max` multiplied by 100.  
+__ID (Title on sign):__ `[F.Percent]`  
+__Creation Aliases:__ `[f.percent]`  
+__Inputs:__ 
+ 
+* `A`, Type: `Float`, Default: `0.0`   
+* `Max`, Type: `Float`, Default: `1.0`  
+
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.percent`  
+# Float: Pi  
+__Description:__ Returns Pi.  
+__ID (Title on sign):__ `[F.Pi]`  
+__Creation Aliases:__ `[f.pi]`  
+__Output:__ `Out`, Type: `Float`, Default: `3.14159265358979`  
+__Permissions:__ `link.basic`, `link.gate.f.pi`  
+# Float: Round  
+__Description:__ Returns `A` rounded to the nearest integer.  
+__ID (Title on sign):__ `[F.Round]`  
+__Creation Aliases:__ `[f.round]`  
+__Input:__ `A`, Type: `Float`, Default: `0.0`  
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.round`  
+# Float: Sign  
+__Description:__ Returns -1 when `A` is less than 0. Returns 0 when `A` is equal to 0. Returns 1 when `A` is greater than 0.  
+__ID (Title on sign):__ `[F.Sign]`  
+__Creation Aliases:__ `[f.sign]`  
+__Input:__ `A`, Type: `Float`, Default: `0.0`  
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.sign`  
+# Float: Square Root  
+__Description:__ Returns the square root of `A`.  
+__ID (Title on sign):__ `[F.Sqrt]`  
+__Creation Aliases:__ `[f.sqrt]`  
+__Input:__ `A`, Type: `Float`, Default: `0.0`  
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.sqrt`  
+# Float: Subtract  
+__Description:__ Returns the sum of `A` minus `B-H`.  
+__ID (Title on sign):__ `[F.Subtract]`  
+__Creation Aliases:__ `[f.subtract]`  
+__Inputs:__ 
+ 
+* `A`, Type: `Float`, Default: `0.0`   
+* `B`, Type: `Float`, Default: `0.0`   
+* `C`, Type: `Float`, Default: `0.0`   
+* `D`, Type: `Float`, Default: `0.0`   
+* `E`, Type: `Float`, Default: `0.0`   
+* `F`, Type: `Float`, Default: `0.0`   
+* `G`, Type: `Float`, Default: `0.0`   
+* `H`, Type: `Float`, Default: `0.0`  
+
+__Output:__ `Out`, Type: `Float`, Default: `0.0`  
+__Permissions:__ `link.basic`, `link.gate.f.subtract`  
 # GPS  
 __ID (Title on sign):__ `[GPS]`  
 __Creation Aliases:__ `[gps]`, `[location]`  
@@ -171,30 +355,6 @@ __Inputs:__
 
 __Output:__ `Position`, Type: `Position`, Default: `[0.0,0.0,0.0]`  
 __Permissions:__ `link.basic`, `link.gate.makepos`  
-# Minus Float  
-__ID (Title on sign):__ `[MinusFloat]`  
-__Creation Aliases:__ `[-]`, `[minus]`, `[minusfloat]`  
-__Inputs:__ 
- 
-* `Number1`, Type: `Float`, Default: `0.0`   
-* `Number2`, Type: `Float`, Default: `0.0`   
-* `Number3`, Type: `Float`, Default: `0.0`   
-* `Number4`, Type: `Float`, Default: `0.0`  
-
-__Output:__ `Product`, Type: `Float`, Default: `0.0`  
-__Permissions:__ `link.basic`, `link.gate.minusfloat`  
-# Multiply Float  
-__ID (Title on sign):__ `[Multiply]`  
-__Creation Aliases:__ `[*]`, `[multiply]`  
-__Inputs:__ 
- 
-* `Number1`, Type: `Float`, Default: `1.0`   
-* `Number2`, Type: `Float`, Default: `1.0`   
-* `Number3`, Type: `Float`, Default: `1.0`   
-* `Number4`, Type: `Float`, Default: `1.0`  
-
-__Output:__ `Product`, Type: `Float`, Default: `1.0`  
-__Permissions:__ `link.basic`, `link.gate.multiply`  
 # Not Equal  
 __ID (Title on sign):__ `[!=]`  
 __Creation Aliases:__ `[!=]`, `[notequal]`  
