@@ -3,18 +3,11 @@ Plugin.is {
     version "0.2"
     author "d4l3k"
     description "Advanced sign based mechanisms in Minecraft."
-    commands :title => {
-        :description => "Sets a title for a player.",
-        :usage => "/title <player> <title>\n/title <title>",
-        :aliases => [ :settitle]
-    }
     commands :link => {
         :description => "Controls Link.",
         :usage => "/<command> edit/off",
     }
 }
-
-$LOAD_PATH.unshift( File.dirname(__FILE__) )
 
 import 'java.util.logging.Logger'
 import 'java.util.logging.Level'
@@ -119,7 +112,7 @@ class Link < RubyPlugin
 					alia.push k
 				end
 			end
-			info+= "__Creation aliases:__ `#{alia.sort.join("`, `")}`  \n"
+			info+= "__Creation Aliases:__ `#{alia.sort.join("`, `")}`  \n"
 			input = gate.inputs.length>1?"\n":""
 			gate.inputs.each do |k,v|
 				defa = v.to_s
